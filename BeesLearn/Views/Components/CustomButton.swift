@@ -22,7 +22,7 @@ struct CustomButton: View {
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .font(Font.custom("Nunito-Bold", size: 18))
                 .padding(.vertical, 12)
-                .background(Color(hex: "#FFD528"))
+                .background(Color("AppPrimaryColor"))
                 .foregroundColor(.white)
                 .cornerRadius(7)
                 .shadow(color: Color.black.opacity(0.25), radius: 5, x: 0, y: 5)

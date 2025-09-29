@@ -9,7 +9,12 @@ import SwiftUI
 
 struct IPAView: View {
     var body: some View {
-        Text("API View")
+        VStack{
+            Spacer()
+            Text("API View")
+            Spacer()
+        }
+        .background(Color("BackgroundColor"))
     }
 }
 

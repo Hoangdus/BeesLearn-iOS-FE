@@ -15,14 +15,12 @@
 		321497342CB1688D008BF5C3 /* BeesLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321497332CB1688D008BF5C3 /* BeesLearnUITests.swift */; };
 		321497362CB1688D008BF5C3 /* BeesLearnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321497352CB1688D008BF5C3 /* BeesLearnUITestsLaunchTests.swift */; };
 		3214974C2CB17906008BF5C3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3214974B2CB17906008BF5C3 /* WelcomeView.swift */; };
-		321497502CB17B08008BF5C3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3214974F2CB17B08008BF5C3 /* Color.swift */; };
 		321497622CB3ED19008BF5C3 /* CustomButtonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321497612CB3ED19008BF5C3 /* CustomButtonLogin.swift */; };
 		321497642CB3F57C008BF5C3 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 321497632CB3F57C008BF5C3 /* Nunito-Bold.ttf */; };
 		321497662CB44F64008BF5C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321497652CB44F64008BF5C3 /* LoginView.swift */; };
 		321497682CB458DE008BF5C3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321497672CB458DE008BF5C3 /* CustomTextField.swift */; };
 		3214976A2CB45E07008BF5C3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321497692CB45E07008BF5C3 /* CustomButton.swift */; };
 		3214976C2CB68F5F008BF5C3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3214976B2CB68F5F008BF5C3 /* SignUpView.swift */; };
-		3216DAAF2CBE50E6000F0475 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3216DAAE2CBE50E6000F0475 /* CustomTabView.swift */; };
 		3216DAB12CBE5455000F0475 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3216DAB02CBE5455000F0475 /* HomeView.swift */; };
 		3216DAB32CBE5466000F0475 /* IPAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3216DAB22CBE5466000F0475 /* IPAView.swift */; };
 		3216DAB52CBE54AC000F0475 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3216DAB42CBE54AC000F0475 /* StatsView.swift */; };
@@ -63,15 +61,13 @@
 		321497332CB1688D008BF5C3 /* BeesLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeesLearnUITests.swift; sourceTree = "<group>"; };
 		321497352CB1688D008BF5C3 /* BeesLearnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeesLearnUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3214974B2CB17906008BF5C3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		3214974F2CB17B08008BF5C3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		321497542CB3D84C008BF5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		321497542CB3D84C008BF5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321497612CB3ED19008BF5C3 /* CustomButtonLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonLogin.swift; sourceTree = "<group>"; };
 		321497632CB3F57C008BF5C3 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		321497652CB44F64008BF5C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		321497672CB458DE008BF5C3 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		321497692CB45E07008BF5C3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		3214976B2CB68F5F008BF5C3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		3216DAAE2CBE50E6000F0475 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		3216DAB02CBE5455000F0475 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3216DAB22CBE5466000F0475 /* IPAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAView.swift; sourceTree = "<group>"; };
 		3216DAB42CBE54AC000F0475 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
@@ -131,10 +127,7 @@
 		321497172CB1688B008BF5C3 /* BeesLearn */ = {
 			isa = PBXGroup;
 			children = (
-				3216DAAB2CBE323F000F0475 /* Navigator */,
-				321497542CB3D84C008BF5C3 /* Info.plist */,
 				321497482CB16F17008BF5C3 /* Resources */,
-				321497472CB16EE7008BF5C3 /* Utilities */,
 				321497452CB16E4B008BF5C3 /* Services */,
 				321497442CB16E37008BF5C3 /* ViewModels */,
 				321497432CB16E28008BF5C3 /* Views */,
@@ -142,6 +135,7 @@
 				321497182CB1688B008BF5C3 /* BeesLearnApp.swift */,
 				3214971A2CB1688B008BF5C3 /* ContentView.swift */,
 				3214971C2CB1688D008BF5C3 /* Assets.xcassets */,
+				321497542CB3D84C008BF5C3 /* Info.plist */,
 				3214971E2CB1688D008BF5C3 /* Preview Content */,
 			);
 			path = BeesLearn;
@@ -183,13 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				321497462CB16E7D008BF5C3 /* Components */,
+				DCA79A3C2E8AFECD00A3AD55 /* Tabs */,
 				3214974B2CB17906008BF5C3 /* WelcomeView.swift */,
 				321497652CB44F64008BF5C3 /* LoginView.swift */,
 				3214976B2CB68F5F008BF5C3 /* SignUpView.swift */,
-				3216DAB02CBE5455000F0475 /* HomeView.swift */,
-				3216DAB22CBE5466000F0475 /* IPAView.swift */,
-				3216DAB42CBE54AC000F0475 /* StatsView.swift */,
-				3216DAB62CBE54C5000F0475 /* SettingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +203,7 @@
 		321497462CB16E7D008BF5C3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3255C4FF2CD248AA000DDCBE /* CustomTopBar.swift */,
 				321497612CB3ED19008BF5C3 /* CustomButtonLogin.swift */,
 				321497672CB458DE008BF5C3 /* CustomTextField.swift */,
 				321497692CB45E07008BF5C3 /* CustomButton.swift */,
@@ -219,14 +211,6 @@
 				326F10882CD996E000E3EF08 /* Translation.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		321497472CB16EE7008BF5C3 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				3214974F2CB17B08008BF5C3 /* Color.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		321497482CB16F17008BF5C3 /* Resources */ = {
@@ -246,13 +230,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		3216DAAB2CBE323F000F0475 /* Navigator */ = {
+		DCA79A3C2E8AFECD00A3AD55 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				3216DAAE2CBE50E6000F0475 /* CustomTabView.swift */,
-				3255C4FF2CD248AA000DDCBE /* CustomTopBar.swift */,
+				3216DAB02CBE5455000F0475 /* HomeView.swift */,
+				3216DAB22CBE5466000F0475 /* IPAView.swift */,
+				3216DAB42CBE54AC000F0475 /* StatsView.swift */,
+				3216DAB62CBE54C5000F0475 /* SettingView.swift */,
 			);
-			path = Navigator;
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +305,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					321497142CB1688B008BF5C3 = {
 						CreatedOnToolsVersion = 15.4;
@@ -392,7 +378,6 @@
 				321497662CB44F64008BF5C3 /* LoginView.swift in Sources */,
 				3214971B2CB1688B008BF5C3 /* ContentView.swift in Sources */,
 				3216DAB72CBE54C5000F0475 /* SettingView.swift in Sources */,
-				321497502CB17B08008BF5C3 /* Color.swift in Sources */,
 				3214976A2CB45E07008BF5C3 /* CustomButton.swift in Sources */,
 				3216DAB32CBE5466000F0475 /* IPAView.swift in Sources */,
 				3216DAB12CBE5455000F0475 /* HomeView.swift in Sources */,
@@ -401,7 +386,6 @@
 				326F10892CD996E000E3EF08 /* Translation.swift in Sources */,
 				3214974C2CB17906008BF5C3 /* WelcomeView.swift in Sources */,
 				3216DAB52CBE54AC000F0475 /* StatsView.swift in Sources */,
-				3216DAAF2CBE50E6000F0475 /* CustomTabView.swift in Sources */,
 				3255C5082CD2EB6F000DDCBE /* Calendar.swift in Sources */,
 				3214976C2CB68F5F008BF5C3 /* SignUpView.swift in Sources */,
 				321497192CB1688B008BF5C3 /* BeesLearnApp.swift in Sources */,
@@ -631,7 +615,6 @@
 		3214973D2CB1688D008BF5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -650,7 +633,6 @@
 		3214973E2CB1688D008BF5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -669,7 +651,6 @@
 		321497402CB1688D008BF5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -686,7 +667,6 @@
 		321497412CB1688D008BF5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

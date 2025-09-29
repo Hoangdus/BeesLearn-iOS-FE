@@ -50,7 +50,7 @@ struct LoginView: View {
                     
                     Text("Sign up")
                         .font(Font.custom("Nunito-Bold", size: 12))
-                        .foregroundStyle(Color(hex: "#F8A724"))
+                        .foregroundStyle(Color("AppPrimaryColor"))
                 }
                 .padding(.top, 10)
             }
@@ -58,9 +58,9 @@ struct LoginView: View {
             
             }
         .navigationDestination(isPresented: $navigateToTabView) {
-            CustomTabView()
+//            CustomTabView()
 //                .transition(.slide)
-                .navigationBarBackButtonHidden(true)
+//                .navigationBarBackButtonHidden(true)
         }
         
     }

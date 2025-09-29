@@ -37,7 +37,7 @@ struct CustomTextField: View {
                 if isPasswordField {
                     Button(action: {isPasswordVisible.toggle()}) {
                         Text(isPasswordVisible ? "Hide" : "Show")
-                            .foregroundStyle(Color(hex: "#ffd528"))
+                            .foregroundStyle(Color("AppPrimaryColor"))
                             .font(Font.custom("Nunito-Bold", size: 14))
                     }
                 }
@@ -52,7 +52,7 @@ struct CustomTextField: View {
 }
 
 #Preview {
-    @State var text = ""
+    @Previewable @State var text = ""
     return CustomTextField(title: "Email", placeholder: "Enter your email", text: $text, isPasswordField: true)
     
 }

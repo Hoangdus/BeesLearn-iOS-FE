@@ -34,7 +34,7 @@ struct CustomTopBar: View {
                         .frame(width: 48, height: 37)
                         .overlay(
                             RoundedRectangle(cornerRadius: 9)
-                                .stroke(Color.keyColor, lineWidth: 2)
+                                .stroke(Color("KeyColor"), lineWidth: 2)
                         )
                     
                     Image("eng-flag")
@@ -50,7 +50,7 @@ struct CustomTopBar: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 34)
                     .onTapGesture {
-                        withAnimation(.easeInOut(duration: 0.2)) {
+                        withAnimation(.easeIn(duration: 0.1)) {
                             isCalendarShow.toggle()
                         }
                     }
@@ -71,7 +71,7 @@ struct CustomTopBar: View {
                 
                 ZStack {
                     Circle()
-                        .stroke(Color.keyColor, lineWidth: 2)
+                        .stroke(Color("KeyColor"), lineWidth: 2)
                         .frame(width: 45, height: 45)
                     
                     Image("avatar")

@@ -11,9 +11,9 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.AppPrimaryColor
-                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                
+//                Color.AppPrimaryColor
+//                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+//                
                 VStack {
                     Text("Bắt đầu học cùng")
                         .font(Font.custom("Nunito-Bold", size: 32))
@@ -29,7 +29,7 @@ struct WelcomeView: View {
                     
                     CustomButtonLogin(image: "apple", title: "Login With Apple", backgroundColor: Color(.black), textColor: Color.white)
                     
-                    CustomButtonLogin(image: "facebook", title: "Login With Facebook", backgroundColor: Color(hex: "#475993"), textColor: Color.white)
+                    CustomButtonLogin(image: "facebook", title: "Login With Facebook", backgroundColor: Color("AppPrimaryColor"), textColor: Color.white)
                     
                     CustomButtonLogin(image: "google", title: "Login With Google", backgroundColor: Color(.white), textColor: Color.black)
                 }

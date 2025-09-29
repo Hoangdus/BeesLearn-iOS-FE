@@ -9,7 +9,7 @@ struct CalendarView: View {
         let calendar = Calendar.current
         let monthInterval = calendar.dateInterval(of: .month, for: currentDate)!
         let monthRange = calendar.range(of: .day, in: .month, for: monthInterval.start)!
-        return Array(monthRange.lowerBound..<monthRange.upperBound) // Lấy các ngày trong tháng (dùng < để không lấy ngày cuối tháng)
+        return Array(monthRange.lowerBound...monthRange.upperBound) // Lấy các ngày trong tháng (dùng < để không lấy ngày cuối tháng)
     }
     
     private var monthYearString: String {
@@ -34,12 +34,12 @@ struct CalendarView: View {
     }
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             Image("calendar-bg")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             
-            VStack(spacing: 10.5) {
+            VStack(spacing: 15) {
                 Text(monthYearString)
                     .font(Font.custom("Nunito-Bold", size: 18))
 //                    .padding(.bottom, 10)
@@ -54,8 +54,8 @@ struct CalendarView: View {
                            
                     }
                 }
-                .padding(.horizontal, 15)
-                .padding(.top, 6)
+//                .padding(.horizontal, 15)
+//                .padding(.top, 6)
                 
                 // Hiển thị các ngày trong tháng
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 7), spacing: 10) {
@@ -83,10 +83,11 @@ struct CalendarView: View {
                             .id("trailing-empty-\(index)") // ID duy nhất cho các ngày trống
                     }
                 }
-                .padding(.horizontal, 15)
+//                .padding(.horizontal, 15)
             }
-            .padding(.top, 50)
+            .padding(.top, 33)
         }
+        .foregroundColor(Color("KeyColor"))
         .onAppear {
             let calendar = Calendar.current
             let now = Date()

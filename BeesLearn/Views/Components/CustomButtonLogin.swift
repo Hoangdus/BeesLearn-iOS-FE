@@ -45,6 +45,6 @@ struct CustomButtonLogin: View {
 }
 
 #Preview {
-    CustomButtonLogin(image: "facebook", title: "Login With Facebook", backgroundColor: Color(hex: "#475993"), textColor: Color.white)
+    CustomButtonLogin(image: "facebook", title: "Login With Facebook", backgroundColor: Color("AppPrimaryColor"), textColor: Color.white)
     
 }

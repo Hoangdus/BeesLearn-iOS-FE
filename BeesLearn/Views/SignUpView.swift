@@ -37,7 +37,7 @@ struct SignUpView: View {
             
             Text("Login now")
                 .font(Font.custom("Nunito-Bold", size: 12))
-                .foregroundStyle(Color(hex: "#F8A724"))
+                .foregroundStyle(Color("KeyColor"))
         }
         .padding(.top, 10)
         
