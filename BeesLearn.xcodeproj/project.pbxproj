@@ -30,6 +30,10 @@
 		3255C5082CD2EB6F000DDCBE /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3255C5072CD2EB6F000DDCBE /* Calendar.swift */; };
 		326F10892CD996E000E3EF08 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326F10882CD996E000E3EF08 /* Translation.swift */; };
 		DC4722DE2E84A363005E6FE5 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */; };
+		DCA79A422E8B016600A3AD55 /* LevelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A412E8B016600A3AD55 /* LevelListView.swift */; };
+		DCA79A442E8DF93800A3AD55 /* LevelListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A432E8DF93800A3AD55 /* LevelListItem.swift */; };
+		DCA79A462E8E338200A3AD55 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A452E8E338200A3AD55 /* QuestionView.swift */; };
+		DCA79A482E8ECF1B00A3AD55 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		3255C5072CD2EB6F000DDCBE /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		326F10882CD996E000E3EF08 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		DCA79A412E8B016600A3AD55 /* LevelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListView.swift; sourceTree = "<group>"; };
+		DCA79A432E8DF93800A3AD55 /* LevelListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListItem.swift; sourceTree = "<group>"; };
+		DCA79A452E8E338200A3AD55 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				321497462CB16E7D008BF5C3 /* Components */,
+				DCA79A402E8B015400A3AD55 /* Screens */,
 				DCA79A3C2E8AFECD00A3AD55 /* Tabs */,
 				3214974B2CB17906008BF5C3 /* WelcomeView.swift */,
 				321497652CB44F64008BF5C3 /* LoginView.swift */,
@@ -209,6 +218,8 @@
 				321497692CB45E07008BF5C3 /* CustomButton.swift */,
 				3255C5072CD2EB6F000DDCBE /* Calendar.swift */,
 				326F10882CD996E000E3EF08 /* Translation.swift */,
+				DCA79A432E8DF93800A3AD55 /* LevelListItem.swift */,
+				DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -239,6 +250,15 @@
 				3216DAB62CBE54C5000F0475 /* SettingView.swift */,
 			);
 			path = Tabs;
+			sourceTree = "<group>";
+		};
+		DCA79A402E8B015400A3AD55 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DCA79A412E8B016600A3AD55 /* LevelListView.swift */,
+				DCA79A452E8E338200A3AD55 /* QuestionView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,8 +394,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3255C5002CD248AA000DDCBE /* CustomTopBar.swift in Sources */,
+				DCA79A422E8B016600A3AD55 /* LevelListView.swift in Sources */,
 				321497682CB458DE008BF5C3 /* CustomTextField.swift in Sources */,
 				321497662CB44F64008BF5C3 /* LoginView.swift in Sources */,
+				DCA79A482E8ECF1B00A3AD55 /* CustomNavigationBar.swift in Sources */,
 				3214971B2CB1688B008BF5C3 /* ContentView.swift in Sources */,
 				3216DAB72CBE54C5000F0475 /* SettingView.swift in Sources */,
 				3214976A2CB45E07008BF5C3 /* CustomButton.swift in Sources */,
@@ -383,8 +405,10 @@
 				3216DAB12CBE5455000F0475 /* HomeView.swift in Sources */,
 				3255C4FC2CC3C5AD000DDCBE /* LoginViewModel.swift in Sources */,
 				321497622CB3ED19008BF5C3 /* CustomButtonLogin.swift in Sources */,
+				DCA79A442E8DF93800A3AD55 /* LevelListItem.swift in Sources */,
 				326F10892CD996E000E3EF08 /* Translation.swift in Sources */,
 				3214974C2CB17906008BF5C3 /* WelcomeView.swift in Sources */,
+				DCA79A462E8E338200A3AD55 /* QuestionView.swift in Sources */,
 				3216DAB52CBE54AC000F0475 /* StatsView.swift in Sources */,
 				3255C5082CD2EB6F000DDCBE /* Calendar.swift in Sources */,
 				3214976C2CB68F5F008BF5C3 /* SignUpView.swift in Sources */,
@@ -552,6 +576,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeesLearn/Preview Content\"";
+				DEVELOPMENT_TEAM = ENP7FKQXR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeesLearn/Info.plist;
@@ -586,6 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeesLearn/Preview Content\"";
+				DEVELOPMENT_TEAM = ENP7FKQXR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeesLearn/Info.plist;

@@ -17,14 +17,14 @@ struct WelcomeView: View {
                 VStack {
                     Text("Bắt đầu học cùng")
                         .font(Font.custom("Nunito-Bold", size: 32))
-                        .foregroundStyle(Color("KeyColor"))
+                        .foregroundStyle(Color("AccentColor"))
                     
                     Text("Bee !")
                         .font(Font.custom("Nunito-Bold", size: 32))
-                        .foregroundStyle(Color("KeyColor"))
+                        .foregroundStyle(Color("AccentColor"))
                     
                     NavigationLink(destination: LoginView()) {
-                        CustomButtonLogin(image: "email", title: "Login With Email", backgroundColor: Color("KeyColor"), textColor: Color.white)
+                        CustomButtonLogin(image: "email", title: "Login With Email", backgroundColor: Color("AccentColor"), textColor: Color.white)
                     }
                     
                     CustomButtonLogin(image: "apple", title: "Login With Apple", backgroundColor: Color(.black), textColor: Color.white)

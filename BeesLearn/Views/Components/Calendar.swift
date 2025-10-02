@@ -87,7 +87,7 @@ struct CalendarView: View {
             }
             .padding(.top, 33)
         }
-        .foregroundColor(Color("KeyColor"))
+        .foregroundColor(Color("AccentColor"))
         .onAppear {
             let calendar = Calendar.current
             let now = Date()
