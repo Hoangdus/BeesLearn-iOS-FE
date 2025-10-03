@@ -1,5 +1,5 @@
 //
-//  QuestionView.swift
+//  QuestionHostView.swift
 //  BeesLearn
 //
 //  Created by HoangDus on 2/10/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuestionView: View {
+struct QuestionHostView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -16,7 +16,7 @@ struct QuestionView: View {
                 dismiss()
             }
             Spacer()
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            MultipleChoices()
             Spacer()
         }
         .background(Color("BackgroundColor"))
@@ -25,5 +25,5 @@ struct QuestionView: View {
 }
 
 #Preview {
-    QuestionView()
+    QuestionHostView()
 }
