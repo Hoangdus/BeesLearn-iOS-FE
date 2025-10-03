@@ -32,13 +32,13 @@ struct LevelListView: View {
                     ForEach(0...100, id: \.self){ i in
                         if ( i % 2 == 0){
                             HStack{
-                                LevelListItem()
+                                LevelListItem(label: "\(i)")
                                 Spacer()
                             }
                         }else{
                             HStack{
                                 Spacer()
-                                LevelListItem()
+                                LevelListItem(label: "\(i)")
                             }
                         }
                     }

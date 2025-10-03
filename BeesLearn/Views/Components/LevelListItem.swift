@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct LevelListItem: View {
+    var label: String
+    
     var body: some View {
-        NavigationLink(destination: QuestionView().toolbar(.hidden, for: .tabBar), label: {
-            HexagonShape()
-                .fill(Color("AppPrimaryColor"))
-                .stroke(Color("AccentColor"), lineWidth: 10)
-                .frame(width: 200, height: 200)
-                .padding()
+        NavigationLink(destination: QuestionHostView().toolbar(.hidden, for: .tabBar), label: {
+            ZStack{
+                HexagonShape()
+                    .fill(Color("AppPrimaryColor"))
+                    .stroke(Color("AccentColor"), lineWidth: 10)
+                    .frame(width: 200, height: 200)
+                    .padding()
+                Text(label)
+                    .font(Font.custom("Nunito-Bold", size: 20))
+                    .foregroundStyle(Color("AccentColor"))
+            }
         })
     }
 }
@@ -48,5 +55,5 @@ struct HexagonShape: Shape {
 
 
 #Preview {
-    LevelListItem()
+    LevelListItem(label: "")
 }
