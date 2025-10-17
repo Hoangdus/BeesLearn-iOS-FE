@@ -10,7 +10,7 @@ import SwiftUI
 struct MultipleChoices: View {
     var body: some View {
         VStack{
-            Spacer()
+//            Spacer()
             QuestionBox(question: "This is a test", content: "test")
             Spacer()
             Grid(horizontalSpacing: 20, verticalSpacing: 20){
@@ -37,31 +37,8 @@ struct MultipleChoices: View {
     }
 }
 
-struct QuestionBox: View {
-    var question: String
-    var content: String
-    
-    var body: some View {
-        ZStack(alignment: .center){
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color("AppPrimaryColor"))
-                .shadow(color: Color("ShadowColor"), radius: 3, y: 3)
-            VStack(spacing: 20){
-                Text(question)
-                    .font(Font.custom("Nunito-Bold", size: 21))
-                    .foregroundStyle(Color("AccentColor"))
-                Text(content)
-                    .font(Font.custom("Nunito-Bold", size: 20))
-                    .foregroundStyle(Color("AccentColor"))
-                Spacer()
-            }
-            .padding(.top, 40)
-        }
-        .frame(width: 300, height: 200)
-    }
-}
 
-struct AnswerButtonView: View {
+fileprivate struct AnswerButtonView: View {
     var answer: String
     var action: (String) -> Void
     

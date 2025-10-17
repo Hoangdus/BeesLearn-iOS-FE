@@ -29,12 +29,19 @@
 		3255C5002CD248AA000DDCBE /* CustomTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3255C4FF2CD248AA000DDCBE /* CustomTopBar.swift */; };
 		3255C5082CD2EB6F000DDCBE /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3255C5072CD2EB6F000DDCBE /* Calendar.swift */; };
 		326F10892CD996E000E3EF08 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326F10882CD996E000E3EF08 /* Translation.swift */; };
+		DC34A0DB2E9EE8FC00F3C608 /* CheckAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */; };
+		DC34A0DD2E9FBE2700F3C608 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */; };
 		DC4722DE2E84A363005E6FE5 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */; };
 		DCA79A422E8B016600A3AD55 /* LevelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A412E8B016600A3AD55 /* LevelListView.swift */; };
 		DCA79A442E8DF93800A3AD55 /* LevelListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A432E8DF93800A3AD55 /* LevelListItem.swift */; };
 		DCA79A462E8E338200A3AD55 /* QuestionHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A452E8E338200A3AD55 /* QuestionHostView.swift */; };
 		DCA79A482E8ECF1B00A3AD55 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */; };
 		DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */; };
+		DCCC84702E93C516006D8269 /* TrueFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCC846F2E93C516006D8269 /* TrueFalse.swift */; };
+		DCCC84722E93C641006D8269 /* QuestionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCC84712E93C641006D8269 /* QuestionBox.swift */; };
+		DCCC84752E93CC47006D8269 /* FillInTheBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */; };
+		DCDB13622EA183E7006AB500 /* CompleteSentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB13612EA183D6006AB500 /* CompleteSentence.swift */; };
+		DCDB13642EA199C5006AB500 /* AnswerChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB13632EA199C5006AB500 /* AnswerChip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,12 +88,19 @@
 		3255C4FF2CD248AA000DDCBE /* CustomTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopBar.swift; sourceTree = "<group>"; };
 		3255C5072CD2EB6F000DDCBE /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		326F10882CD996E000E3EF08 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnswerButton.swift; sourceTree = "<group>"; };
+		DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		DCA79A412E8B016600A3AD55 /* LevelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListView.swift; sourceTree = "<group>"; };
 		DCA79A432E8DF93800A3AD55 /* LevelListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListItem.swift; sourceTree = "<group>"; };
 		DCA79A452E8E338200A3AD55 /* QuestionHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHostView.swift; sourceTree = "<group>"; };
 		DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoices.swift; sourceTree = "<group>"; };
+		DCCC846F2E93C516006D8269 /* TrueFalse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalse.swift; sourceTree = "<group>"; };
+		DCCC84712E93C641006D8269 /* QuestionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBox.swift; sourceTree = "<group>"; };
+		DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInTheBlank.swift; sourceTree = "<group>"; };
+		DCDB13612EA183D6006AB500 /* CompleteSentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSentence.swift; sourceTree = "<group>"; };
+		DCDB13632EA199C5006AB500 /* AnswerChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,9 +281,24 @@
 		DCA79A492E8F04BE00A3AD55 /* QuestionViews */ = {
 			isa = PBXGroup;
 			children = (
+				DCCC84732E93C659006D8269 /* Components */,
 				DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */,
+				DCCC846F2E93C516006D8269 /* TrueFalse.swift */,
+				DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */,
+				DCDB13612EA183D6006AB500 /* CompleteSentence.swift */,
+				DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */,
 			);
 			path = QuestionViews;
+			sourceTree = "<group>";
+		};
+		DCCC84732E93C659006D8269 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */,
+				DCDB13632EA199C5006AB500 /* AnswerChip.swift */,
+				DCCC84712E93C641006D8269 /* QuestionBox.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +434,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3255C5002CD248AA000DDCBE /* CustomTopBar.swift in Sources */,
+				DCCC84702E93C516006D8269 /* TrueFalse.swift in Sources */,
+				DCDB13642EA199C5006AB500 /* AnswerChip.swift in Sources */,
 				DCA79A422E8B016600A3AD55 /* LevelListView.swift in Sources */,
 				DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */,
 				321497682CB458DE008BF5C3 /* CustomTextField.swift in Sources */,
@@ -413,12 +444,17 @@
 				3214971B2CB1688B008BF5C3 /* ContentView.swift in Sources */,
 				3216DAB72CBE54C5000F0475 /* SettingView.swift in Sources */,
 				3214976A2CB45E07008BF5C3 /* CustomButton.swift in Sources */,
+				DC34A0DD2E9FBE2700F3C608 /* QuestionViewModel.swift in Sources */,
 				3216DAB32CBE5466000F0475 /* IPAView.swift in Sources */,
 				3216DAB12CBE5455000F0475 /* HomeView.swift in Sources */,
 				3255C4FC2CC3C5AD000DDCBE /* LoginViewModel.swift in Sources */,
+				DC34A0DB2E9EE8FC00F3C608 /* CheckAnswerButton.swift in Sources */,
+				DCCC84752E93CC47006D8269 /* FillInTheBlank.swift in Sources */,
 				321497622CB3ED19008BF5C3 /* CustomButtonLogin.swift in Sources */,
 				DCA79A442E8DF93800A3AD55 /* LevelListItem.swift in Sources */,
 				326F10892CD996E000E3EF08 /* Translation.swift in Sources */,
+				DCDB13622EA183E7006AB500 /* CompleteSentence.swift in Sources */,
+				DCCC84722E93C641006D8269 /* QuestionBox.swift in Sources */,
 				3214974C2CB17906008BF5C3 /* WelcomeView.swift in Sources */,
 				DCA79A462E8E338200A3AD55 /* QuestionHostView.swift in Sources */,
 				3216DAB52CBE54AC000F0475 /* StatsView.swift in Sources */,

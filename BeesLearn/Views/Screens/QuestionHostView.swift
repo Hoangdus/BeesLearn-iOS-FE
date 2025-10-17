@@ -11,13 +11,15 @@ struct QuestionHostView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        VStack{
+        VStack(){
             CustomNavigationBar(){
                 dismiss()
             }
-            Spacer()
-            MultipleChoices()
-            Spacer()
+//            Spacer()
+            FillInTheBlank()
+//            TrueFalse()
+//            MultipleChoices()
+//            Spacer()
         }
         .background(Color("BackgroundColor"))
         .toolbar(.hidden, for: .navigationBar)
