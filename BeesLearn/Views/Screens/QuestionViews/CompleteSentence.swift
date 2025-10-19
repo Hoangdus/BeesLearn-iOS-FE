@@ -18,7 +18,7 @@ struct CompleteSentence: View {
             
             VStack{
                 QuestionBoxView(
-                    question: viewModel.question,
+                    question: viewModel.questionForType0,
                     content: viewModel.content,
                     answer: viewModel.wordsInAnswer,
                     width: parentWidth,
@@ -43,7 +43,7 @@ struct CompleteSentence: View {
             .padding(.bottom, 20)
             .frame(width: geo.size.width, height: geo.size.height)
 //            .onAppear(){
-//                wordsInSentence = viewModel.sentence.split(separator: " ")
+//                viewModel.initCompleteSentence()
 //            }
         }
     }

@@ -17,6 +17,7 @@ struct QuestionHostView: View {
             }
 //            Spacer()
             FillInTheBlank()
+//            CompleteSentence()
 //            TrueFalse()
 //            MultipleChoices()
 //            Spacer()

@@ -18,20 +18,20 @@ struct FillInTheBlank: View {
             
             VStack{
                 QuestionBoxView(
-                    question: viewModel.question,
+                    question: viewModel.questionForType0,
                     content: viewModel.content,
                     answer: viewModel.wordsInAnswer,
                     width: parentWidth,
                     height: parentHeight
                 ){ value in
-                    viewModel.removeWordInAnswer(index: value)
+//                    viewModel.removeWordInAnswer(index: value)
                 }
                 WrappingChipLayout(
                     items: viewModel.wordsInSentence,
                     hiddenItems: viewModel.hiddenSentenceWords,
                     spacing: 6
                 ){ word, index in
-                    viewModel.putContentWordInAnswer(word: word, index: index)
+//                    viewModel.putContentWordInAnswer(word: word, index: index)
                 }
                     .padding()
                     .frame(width: parentWidth)
@@ -42,9 +42,9 @@ struct FillInTheBlank: View {
             }
             .padding(.bottom, 20)
             .frame(width: geo.size.width, height: geo.size.height)
-//            .onAppear(){
-//                wordsInSentence = viewModel.sentence.split(separator: " ")
-//            }
+            .onAppear(){
+                viewModel.initFillInTheBlank()
+            }
         }
     }
 }
@@ -55,6 +55,7 @@ fileprivate struct WrappingChipLayout: View {
     var spacing: CGFloat
     var action: (_: Substring, _: Int) -> Void
     
+    @State private var showView = false
     @State private var totalHeight: CGFloat = .zero
     
     var body: some View {
@@ -69,39 +70,67 @@ fileprivate struct WrappingChipLayout: View {
     private func generateContent(in geometry: GeometryProxy) -> some View {
         var width = CGFloat.zero
         var height = CGFloat.zero
-
-        return ZStack(alignment: .topLeading) {
-            ForEach(Array(items.enumerated()), id: \.offset) { index, item in
-                AnswerChipView(answer: item.description, action: {
-                    action(item, index)
-                })
-                    .padding(.trailing, spacing)
-                    .padding(.bottom, spacing)
-                    .alignmentGuide(.leading, computeValue: { dimension in
-                        if (abs(width - dimension.width) > geometry.size.width) {
-                            width = 0
-                            height -= dimension.height
-                        }
-                        let result = width
-                        if index == items.count - 1 {
-                            width = 0
-                        } else {
-                            width -= dimension.width
-                        }
-                        return result
+        @State var xOffset = CGFloat.zero
+        @State var yOffset = CGFloat.zero
+        
+        let contentView =
+            ZStack(alignment: .topLeading) {
+                ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+                    AnswerChipView(answer: item.description, action: {
+                        action(item, index)
                     })
-                    .alignmentGuide(.top, computeValue: { dimension in
-                        let result = height
-                        if index == items.count - 1 {
-                            height = 0
+                        .padding(.trailing, spacing)
+                        .padding(.bottom, spacing)
+                        .alignmentGuide(.leading, computeValue: { dimension in
+                            if (abs(width - dimension.width) > geometry.size.width) {
+                                width = 0
+                                height -= dimension.height
+                            }
+                            let result = width
+                            if index == items.count - 1 {
+                                width = 0
+                            } else {
+                                width -= dimension.width
+                            }
+                            if item == "_________" {
+                                xOffset = width
+//                              print("xOffset: \(xOffset)")
+                            }
+                            return result
+                        })
+                        .alignmentGuide(.top, computeValue: { dimension in
+                            let result = height
+                            if index == items.count - 1 {
+                                height = 0
+                            }
+                            if item == "_________" {
+                                yOffset = height
+//                              print("yOffset: \(yOffset)")
+                            }
+                            return result
+                        })
+                        .opacity(hiddenItems.contains(index) ? 0 : 1)
+                }
+                    if showView {
+                        AnswerChipView(answer: "test", action: {
+                            
+                        })
+                        .offset(x: xOffset, y: yOffset)
+                        .onAppear(){
+                            print("xOffset: \(xOffset)")
+                            print("yOffset: \(yOffset)")
                         }
-                        return result
-                    })
-                    .opacity(hiddenItems.contains(index) ? 0 : 1)
-                    
-            }
-        }
-        .background(viewHeightReader($totalHeight))
+                    }
+                }
+                .background(viewHeightReader($totalHeight))
+                .onAppear(){
+                    Task{
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+                            self.showView = true
+                        })
+                    }
+                }
+        return contentView
     }
     
     private func viewHeightReader(_ binding: Binding<CGFloat>) -> some View {
