@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MultipleChoices: View {
+    var onCompleteQuestion: ()->Void
     var body: some View {
         VStack{
 //            Spacer()
@@ -17,6 +18,7 @@ struct MultipleChoices: View {
                 GridRow{
                     AnswerButtonView(answer: "Text1"){ answer in
                         print(answer)
+                        onCompleteQuestion()
                     }
                     AnswerButtonView(answer: "Text2"){ answer in
                         print(answer)
@@ -60,5 +62,5 @@ fileprivate struct AnswerButtonView: View {
 }
 
 #Preview {
-    MultipleChoices()
+    MultipleChoices(){}
 }

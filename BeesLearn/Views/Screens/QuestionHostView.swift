@@ -9,14 +9,30 @@ import SwiftUI
 
 struct QuestionHostView: View {
     @Environment(\.dismiss) var dismiss
+    @StateObject var hostViewModel = QuestionHostViewModel()
     
     var body: some View {
         VStack(){
-            CustomNavigationBar(){
+            ProgressNavigationBar(progress: hostViewModel.progress){
                 dismiss()
             }
+            if(hostViewModel.questionType == .ArrangeWords){
+                ArrangeWords(){
+                    hostViewModel.CompleteQuestion()
+                }
+            }else if(hostViewModel.questionType == .MultipleChoices){
+                MultipleChoices(){
+                    hostViewModel.CompleteQuestion()
+                }
+            }else if(hostViewModel.questionType == .TrueFalse){
+                TrueFalse(){ _ in
+                    hostViewModel.CompleteQuestion()
+                }
+            }else{
+                
+            }
 //            Spacer()
-            FillInTheBlank()
+//            FillInTheBlank()
 //            CompleteSentence()
 //            TrueFalse()
 //            MultipleChoices()
@@ -24,6 +40,11 @@ struct QuestionHostView: View {
         }
         .background(Color("BackgroundColor"))
         .toolbar(.hidden, for: .navigationBar)
+        .onChange(of: hostViewModel.dismissQuestionHostView) { old, new  in
+            if new {
+                dismiss()
+            }
+        }
     }
 }
 

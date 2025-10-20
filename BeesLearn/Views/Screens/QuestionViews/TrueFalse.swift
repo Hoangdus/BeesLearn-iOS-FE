@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TrueFalse: View {
+    var onCompleteQuestion: (_: Bool)->Void
     var body: some View {
         VStack(){
             QuestionBox(question: "True or false", content: "is this a test?")
@@ -15,9 +16,11 @@ struct TrueFalse: View {
             HStack(spacing: 90){
                 answerButtonView(type: false){ i in
                     print(i)
+                    onCompleteQuestion(i)
                 }
                 answerButtonView(type: true){ i in
                     print(i)
+                    onCompleteQuestion(i)
                 }
             }
             Spacer()
@@ -53,5 +56,5 @@ fileprivate struct answerButtonView: View {
 }
 
 #Preview {
-    TrueFalse()
+    TrueFalse(){_ in}
 }

@@ -1,5 +1,5 @@
 //
-//  CompleteSentence.swift
+//  ArrangeWords.swift
 //  BeesLearn
 //
 //  Created by HoangDus on 17/10/25.
@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct CompleteSentence: View {
+struct ArrangeWords: View {
     @StateObject var viewModel = QuestionViewModel()
     @State var wordsInSentence: [Substring] = []
+    var onCompleteQuestion: ()->Void
 
     var body: some View {
         GeometryReader{ geo in
@@ -38,6 +39,7 @@ struct CompleteSentence: View {
                 Spacer()
                 CheckAnswerButton(width: parentWidth){
                     print("Check")
+                    onCompleteQuestion()
                 }
             }
             .padding(.bottom, 20)
