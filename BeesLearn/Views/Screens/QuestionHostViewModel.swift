@@ -19,6 +19,12 @@ final class QuestionHostViewModel: ObservableObject{
     @Published var progress: Double = 0.0
     @Published var questionType: QuestionType?
     @Published var dismissQuestionHostView = false
+    @Published var questions: [Question] = [
+        Question(content: "test1", answer: "test2"),
+        Question(content: "test1", answer: "test2"),
+        Question(content: "test1", answer: "test2"),
+        TrueFalseQuestion(content: "test", tfAnswer: false)
+    ]
     
     init() {
         let randomNumber = Int.random(in: 1...3)
@@ -29,6 +35,7 @@ final class QuestionHostViewModel: ObservableObject{
         }else{
             questionType = QuestionType.ArrangeWords
         }
+        self.questions.shuffle()
         print("init question type: \(questionType!)")
     }
     
