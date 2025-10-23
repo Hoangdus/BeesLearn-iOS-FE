@@ -16,27 +16,39 @@ struct QuestionHostView: View {
             ProgressNavigationBar(progress: hostViewModel.progress){
                 dismiss()
             }
-            if(hostViewModel.questionType == .ArrangeWords){
-                ArrangeWords(){
-                    hostViewModel.CompleteQuestion()
+            GeometryReader{ geometry in
+                ScrollViewReader{ proxy in
+                    ScrollView(.horizontal){
+                        LazyHStack(spacing: 0){
+                            ForEach(hostViewModel.questions){ question in
+                                if(question is TrueFalseQuestion){
+                                    TrueFalse(onCompleteQuestion: { _ in
+                                        hostViewModel.CompleteQuestion()
+                                    })
+                                    .frame(width: geometry.size.width)
+                                    .id(question.id)
+                                }else{
+                                    MultipleChoices(onCompleteQuestion: {
+                                        hostViewModel.CompleteQuestion()
+                                    })
+                                    .frame(width: geometry.size.width)
+                                    .id(question.id)
+                                }
+                            }
+                        }
+                        .scrollTargetLayout()
+                    }
+                    .onChange(of: hostViewModel.nextQuestionID, {
+                        withAnimation(.default, {
+                            proxy.scrollTo(hostViewModel.nextQuestionID)
+                        })
+                    })
+                    .scrollTargetBehavior(.viewAligned)
+                    .scrollIndicators(.hidden)
+                    .allowsHitTesting(hostViewModel.progress == 1 ? false : true)
+                    .scrollDisabled(true)
                 }
-            }else if(hostViewModel.questionType == .MultipleChoices){
-                MultipleChoices(){
-                    hostViewModel.CompleteQuestion()
-                }
-            }else if(hostViewModel.questionType == .TrueFalse){
-                TrueFalse(){ _ in
-                    hostViewModel.CompleteQuestion()
-                }
-            }else{
-                
             }
-//            Spacer()
-//            FillInTheBlank()
-//            CompleteSentence()
-//            TrueFalse()
-//            MultipleChoices()
-//            Spacer()
         }
         .background(Color("BackgroundColor"))
         .toolbar(.hidden, for: .navigationBar)

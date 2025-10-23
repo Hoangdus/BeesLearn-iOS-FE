@@ -6,18 +6,10 @@
 //
 
 import Foundation
-import SwiftUI
-import Combine
-
-enum QuestionType: String{
-    case TrueFalse
-    case MultipleChoices
-    case ArrangeWords
-}
 
 final class QuestionHostViewModel: ObservableObject{
     @Published var progress: Double = 0.0
-    @Published var questionType: QuestionType?
+    @Published var nextQuestionID: UUID?
     @Published var dismissQuestionHostView = false
     @Published var questions: [Question] = [
         Question(content: "test1", answer: "test2"),
@@ -26,33 +18,27 @@ final class QuestionHostViewModel: ObservableObject{
         TrueFalseQuestion(content: "test", tfAnswer: false)
     ]
     
+    private var questionProgress = 0
+    
+    
     init() {
-        let randomNumber = Int.random(in: 1...3)
-        if(randomNumber == 1){
-            questionType = QuestionType.TrueFalse
-        }else if(randomNumber == 2){
-            questionType = QuestionType.MultipleChoices
-        }else{
-            questionType = QuestionType.ArrangeWords
-        }
         self.questions.shuffle()
-        print("init question type: \(questionType!)")
+        print("question list: \(questions)")
     }
     
     func CompleteQuestion(){
         progress += 0.25
-        let randomNumber = Int.random(in: 1...3)
         
-        if(randomNumber == 1){
-            questionType = QuestionType.TrueFalse
-        }else if(randomNumber == 2){
-            questionType = QuestionType.MultipleChoices
-        }else{
-            questionType = QuestionType.ArrangeWords
+        questionProgress += 1
+        if(questionProgress < questions.count){
+            nextQuestionID = questions[questionProgress].id
+            print("next question id: \(nextQuestionID!)")
         }
-        print("next question type: \(questionType!)")
+        
         if(progress == 1){
-            dismissQuestionHostView = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                self.dismissQuestionHostView = true
+            })
         }
     }
 }

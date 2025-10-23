@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Question{
+class Question: Identifiable{
+    var id = UUID()
     var content: String
     var answer: String
     
