@@ -36,6 +36,7 @@
 		DC4722DE2E84A363005E6FE5 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */; };
 		DC9EB3402EA97064001E877B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EB33F2EA97064001E877B /* Question.swift */; };
 		DC9EB3422EA970C9001E877B /* TrueFalseQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EB3412EA970C9001E877B /* TrueFalseQuestion.swift */; };
+		DC9EB3462EAC1024001E877B /* MultipleChoiceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EB3452EAC1024001E877B /* MultipleChoiceQuestion.swift */; };
 		DCA79A422E8B016600A3AD55 /* LevelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A412E8B016600A3AD55 /* LevelListView.swift */; };
 		DCA79A442E8DF93800A3AD55 /* LevelListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A432E8DF93800A3AD55 /* LevelListItem.swift */; };
 		DCA79A462E8E338200A3AD55 /* QuestionHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A452E8E338200A3AD55 /* QuestionHostView.swift */; };
@@ -99,6 +100,7 @@
 		DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		DC9EB33F2EA97064001E877B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		DC9EB3412EA970C9001E877B /* TrueFalseQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseQuestion.swift; sourceTree = "<group>"; };
+		DC9EB3452EAC1024001E877B /* MultipleChoiceQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceQuestion.swift; sourceTree = "<group>"; };
 		DCA79A412E8B016600A3AD55 /* LevelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListView.swift; sourceTree = "<group>"; };
 		DCA79A432E8DF93800A3AD55 /* LevelListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListItem.swift; sourceTree = "<group>"; };
 		DCA79A452E8E338200A3AD55 /* QuestionHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHostView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				DC9EB33F2EA97064001E877B /* Question.swift */,
 				DC9EB3412EA970C9001E877B /* TrueFalseQuestion.swift */,
+				DC9EB3452EAC1024001E877B /* MultipleChoiceQuestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				3216DAB52CBE54AC000F0475 /* StatsView.swift in Sources */,
 				3255C5082CD2EB6F000DDCBE /* Calendar.swift in Sources */,
 				3214976C2CB68F5F008BF5C3 /* SignUpView.swift in Sources */,
+				DC9EB3462EAC1024001E877B /* MultipleChoiceQuestion.swift in Sources */,
 				321497192CB1688B008BF5C3 /* BeesLearnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
