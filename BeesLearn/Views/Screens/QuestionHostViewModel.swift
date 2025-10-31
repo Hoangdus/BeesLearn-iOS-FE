@@ -30,6 +30,7 @@ final class QuestionHostViewModel: ObservableObject{
     init() {
         self.questions.shuffle()
         print("question list: \(questions)")
+        self.currentQuestion = self.questions[questionProgress]
     }
     
     func checkAnswer<T>(answer: T){
@@ -48,6 +49,8 @@ final class QuestionHostViewModel: ObservableObject{
                 self.result = .incorrect
             }
         }
+        print(self.result)
+        CompleteQuestion()
     }
     
     func CompleteQuestion(){
@@ -56,6 +59,8 @@ final class QuestionHostViewModel: ObservableObject{
         questionProgress += 1
         if(questionProgress < questions.count){
             nextQuestionID = questions[questionProgress].id
+            currentQuestion = questions[questionProgress]
+            result = nil
             print("next question id: \(nextQuestionID!)")
         }
         

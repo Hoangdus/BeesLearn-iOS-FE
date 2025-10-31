@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MultipleChoices: View {
     var question: MultipleChoiceQuestion
-    var onCompleteQuestion: (_ correctness: Bool)->Void
+    var onCompleteQuestion: (_ answer: String)->Void
     var body: some View {
         VStack{
 //            Spacer()
@@ -18,22 +18,18 @@ struct MultipleChoices: View {
             Grid(horizontalSpacing: 20, verticalSpacing: 20){
                 GridRow{
                     AnswerButtonView(answer: question.possibleAnswers[0]){ answer in
-                        print(answer)
-                        onCompleteQuestion(true)
+                        onCompleteQuestion(answer)
                     }
                     AnswerButtonView(answer: question.possibleAnswers[1]){ answer in
-                        print(answer)
-                        onCompleteQuestion(true)
+                        onCompleteQuestion(answer)
                     }
                 }
                 GridRow{
                     AnswerButtonView(answer: question.possibleAnswers[2]){ answer in
-                        print(answer)
-                        onCompleteQuestion(true)
+                        onCompleteQuestion(answer)
                     }
                     AnswerButtonView(answer: question.possibleAnswers[3]){ answer in
-                        print(answer)
-                        onCompleteQuestion(true)
+                        onCompleteQuestion(answer)
                     }
                 }
             }

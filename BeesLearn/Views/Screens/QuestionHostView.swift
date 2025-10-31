@@ -24,18 +24,13 @@ struct QuestionHostView: View {
                             ForEach(hostViewModel.questions){ question in
                                 if(question is TrueFalseQuestion){
                                     TrueFalse(question: question as! TrueFalseQuestion, onCompleteQuestion: { correctness in
-                                        if(correctness){
-                                            print("True false question is correct")
-                                        }else{
-                                            print("True false question is incorrect")
-                                        }
-                                        hostViewModel.CompleteQuestion()
+                                        hostViewModel.checkAnswer(answer: correctness)
                                     })
                                     .frame(width: geometry.size.width)
                                     .id(question.id)
                                 }else{
-                                    MultipleChoices(question: question as! MultipleChoiceQuestion, onCompleteQuestion: { correctness in 
-                                        hostViewModel.CompleteQuestion()
+                                    MultipleChoices(question: question as! MultipleChoiceQuestion, onCompleteQuestion: { answer in
+                                        hostViewModel.checkAnswer(answer: answer)
                                     })
                                     .frame(width: geometry.size.width)
                                     .id(question.id)
