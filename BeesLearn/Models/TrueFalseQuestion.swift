@@ -14,4 +14,8 @@ final class TrueFalseQuestion: Question{
         self.tfAnswer = tfAnswer
         super.init(content: content)
     }
+    
+    func checkAnswer(answer: Bool) -> Bool{
+        return answer == tfAnswer
+    }
 }

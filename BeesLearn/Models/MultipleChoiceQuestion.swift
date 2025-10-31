@@ -19,5 +19,7 @@ final class MultipleChoiceQuestion: Question{
         super.init(content: content, answer: answer)
     }
     
-    
+    func checkAnswer(answer: String) -> Bool{
+        return answer == self.answer
+    }
 }

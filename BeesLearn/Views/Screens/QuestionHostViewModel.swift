@@ -7,23 +7,47 @@
 
 import Foundation
 
+enum QuestionResult{
+    case correct
+    case incorrect
+}
+
 final class QuestionHostViewModel: ObservableObject{
     @Published var progress: Double = 0.0
     @Published var nextQuestionID: UUID?
     @Published var dismissQuestionHostView = false
+    @Published var result: QuestionResult?
     @Published var questions: [Question] = [
-        Question(content: "test1", answer: "test2"),
-        Question(content: "test1", answer: "test2"),
-        Question(content: "test1", answer: "test2"),
-        TrueFalseQuestion(content: "test", tfAnswer: false)
+        MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
+        MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
+        MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
+        TrueFalseQuestion(content: "is this a test?", tfAnswer: false)
     ]
     
     private var questionProgress = 0
-    
+    private var currentQuestion: Question?
     
     init() {
         self.questions.shuffle()
         print("question list: \(questions)")
+    }
+    
+    func checkAnswer<T>(answer: T){
+        if currentQuestion is TrueFalseQuestion{
+            let trueFalseQuestion = currentQuestion as! TrueFalseQuestion
+            if (trueFalseQuestion.checkAnswer(answer: answer as! Bool)){
+                self.result = .correct
+            }else{
+                self.result = .incorrect
+            }
+        }else if currentQuestion is MultipleChoiceQuestion{
+            let multipleChoiceQuestion = currentQuestion as! MultipleChoiceQuestion
+            if (multipleChoiceQuestion.checkAnswer(answer: answer as! String)){
+                self.result = .correct
+            }else{
+                self.result = .incorrect
+            }
+        }
     }
     
     func CompleteQuestion(){
