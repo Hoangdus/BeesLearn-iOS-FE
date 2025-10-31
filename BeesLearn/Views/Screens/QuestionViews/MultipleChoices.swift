@@ -8,28 +8,32 @@
 import SwiftUI
 
 struct MultipleChoices: View {
-    var onCompleteQuestion: ()->Void
+    var question: MultipleChoiceQuestion
+    var onCompleteQuestion: (_ correctness: Bool)->Void
     var body: some View {
         VStack{
 //            Spacer()
-            QuestionBox(question: "This is a test", content: "test")
+            QuestionBox(question: question.question, content: question.content)
             Spacer()
             Grid(horizontalSpacing: 20, verticalSpacing: 20){
                 GridRow{
-                    AnswerButtonView(answer: "Text1"){ answer in
+                    AnswerButtonView(answer: question.possibleAnswers[0]){ answer in
                         print(answer)
-                        onCompleteQuestion()
+                        onCompleteQuestion(true)
                     }
-                    AnswerButtonView(answer: "Text2"){ answer in
+                    AnswerButtonView(answer: question.possibleAnswers[1]){ answer in
                         print(answer)
+                        onCompleteQuestion(true)
                     }
                 }
                 GridRow{
-                    AnswerButtonView(answer: "Text3"){ answer in
+                    AnswerButtonView(answer: question.possibleAnswers[2]){ answer in
                         print(answer)
+                        onCompleteQuestion(true)
                     }
-                    AnswerButtonView(answer: "Text4"){ answer in
+                    AnswerButtonView(answer: question.possibleAnswers[3]){ answer in
                         print(answer)
+                        onCompleteQuestion(true)
                     }
                 }
             }
@@ -61,6 +65,6 @@ fileprivate struct AnswerButtonView: View {
     }
 }
 
-#Preview {
-    MultipleChoices(){}
-}
+//#Preview {
+//    MultipleChoices(){}
+//}

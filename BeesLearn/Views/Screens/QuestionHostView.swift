@@ -16,19 +16,25 @@ struct QuestionHostView: View {
             ProgressNavigationBar(progress: hostViewModel.progress){
                 dismiss()
             }
+            
             GeometryReader{ geometry in
                 ScrollViewReader{ proxy in
                     ScrollView(.horizontal){
                         LazyHStack(spacing: 0){
                             ForEach(hostViewModel.questions){ question in
                                 if(question is TrueFalseQuestion){
-                                    TrueFalse(onCompleteQuestion: { _ in
+                                    TrueFalse(question: question as! TrueFalseQuestion, onCompleteQuestion: { correctness in
+                                        if(correctness){
+                                            print("True false question is correct")
+                                        }else{
+                                            print("True false question is incorrect")
+                                        }
                                         hostViewModel.CompleteQuestion()
                                     })
                                     .frame(width: geometry.size.width)
                                     .id(question.id)
                                 }else{
-                                    MultipleChoices(onCompleteQuestion: {
+                                    MultipleChoices(question: question as! MultipleChoiceQuestion, onCompleteQuestion: { correctness in 
                                         hostViewModel.CompleteQuestion()
                                     })
                                     .frame(width: geometry.size.width)
