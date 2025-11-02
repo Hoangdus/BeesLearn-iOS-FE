@@ -46,7 +46,11 @@ struct HomeView: View {
                             ){
                                 OptionButtonView(title: "Learn", imageName: "practice")
                             }
-                            OptionButtonView(title: "Podcast", imageName: "podcast")
+                            NavigationLink(
+                                destination: IPAList()
+                            ){
+                                OptionButtonView(title: "IPA", imageName: "podcast")
+                            }
                         }
                         GridRow{
                             OptionButtonView(title: "Music", imageName: "music")
