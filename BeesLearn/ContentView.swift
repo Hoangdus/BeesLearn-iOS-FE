@@ -48,11 +48,11 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                 }
                 .tag(0)
-            IPAView()
-                .tabItem{
-                    Image(systemName: "character.phonetic")
-                }
-                .tag(1)
+//            IPAView()
+//                .tabItem{
+//                    Image(systemName: "character.phonetic")
+//                }
+//                .tag(1)
             StatsView()
                 .tabItem{
                     Image(systemName: "chart.bar.fill")
