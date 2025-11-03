@@ -9,6 +9,7 @@ import SwiftUI
 
 struct IPAList: View {
     @Environment(\.dismiss) var dismiss
+    @StateObject var iPAViewModel = IPAListViewModel()
     let columns = [
             GridItem(.flexible()),
             GridItem(.flexible()),
@@ -23,15 +24,15 @@ struct IPAList: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
                     Section{
-                        ForEach(0..<21, id: \.self) { index in
-                            GridItemView(iPA: IPA(symbol: "\(index + 1)", exampleWord: "\(index + 1)", audio1Url: "\(index + 1)", audio2Url: "\(index + 1)"))
+                        ForEach(iPAViewModel.vowels) { ipa in
+                            GridItemView(iPA: ipa)
                         }
                     } header: {
                         HeaderView(text: "Nguyên Âm")
                     }
                     Section{
-                        ForEach(21..<42, id: \.self) { index in
-                            GridItemView(iPA: IPA(symbol: "\(index + 1)", exampleWord: "\(index + 1)", audio1Url: "\(index + 1)", audio2Url: "\(index + 1)"))
+                        ForEach(iPAViewModel.consonants) { ipa in
+                            GridItemView(iPA: ipa)
                         }
                     } header: {
                         HeaderView(text: "Phụ Âm")
@@ -72,7 +73,7 @@ struct GridItemView: View {
                 VStack(spacing: 10){
                     Text("\(iPA.symbol)")
                         .foregroundColor(Color("AccentColor"))
-                        .font(Font.custom("Nunito", size: 18))
+                        .font(.system(size: 22))
                     Text("\(iPA.exampleWord)")
                         .foregroundColor(Color("AccentColor"))
                         .font(Font.custom("Nunito", size: 18))

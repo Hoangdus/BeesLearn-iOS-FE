@@ -7,7 +7,8 @@
 
 import Foundation
 
-class IPA{
+class IPA: Identifiable{
+    var id: UUID = UUID()
     var symbol: String
     var exampleWord: String
     var audio1Url: String
