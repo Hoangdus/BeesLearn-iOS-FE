@@ -45,6 +45,7 @@
 		DCC6C79E2EB5BB7500C8D8AD /* IPAList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6C79D2EB5BB7500C8D8AD /* IPAList.swift */; };
 		DCC6C7A02EB7379F00C8D8AD /* IPA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6C79F2EB7379F00C8D8AD /* IPA.swift */; };
 		DCC6C7A22EB73BB700C8D8AD /* IPAListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6C7A12EB73BB700C8D8AD /* IPAListViewModel.swift */; };
+		DCC6C7A52EB8CABA00C8D8AD /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6C7A42EB8CABA00C8D8AD /* FlashCard.swift */; };
 		DCCC84702E93C516006D8269 /* TrueFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCC846F2E93C516006D8269 /* TrueFalse.swift */; };
 		DCCC84722E93C641006D8269 /* QuestionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCC84712E93C641006D8269 /* QuestionBox.swift */; };
 		DCCC84752E93CC47006D8269 /* FillInTheBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */; };
@@ -112,6 +113,7 @@
 		DCC6C79D2EB5BB7500C8D8AD /* IPAList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAList.swift; sourceTree = "<group>"; };
 		DCC6C79F2EB7379F00C8D8AD /* IPA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPA.swift; sourceTree = "<group>"; };
 		DCC6C7A12EB73BB700C8D8AD /* IPAListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAListViewModel.swift; sourceTree = "<group>"; };
+		DCC6C7A42EB8CABA00C8D8AD /* FlashCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
 		DCCC846F2E93C516006D8269 /* TrueFalse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalse.swift; sourceTree = "<group>"; };
 		DCCC84712E93C641006D8269 /* QuestionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBox.swift; sourceTree = "<group>"; };
 		DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInTheBlank.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 		DCA79A402E8B015400A3AD55 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DCC6C7A32EB8CA8700C8D8AD /* FlashCard */,
 				DCC6C79A2EB5BB5800C8D8AD /* IPA */,
 				DCC6C7992EB5BB4800C8D8AD /* Learn */,
 			);
@@ -328,6 +331,14 @@
 				DCC6C7A12EB73BB700C8D8AD /* IPAListViewModel.swift */,
 			);
 			path = IPA;
+			sourceTree = "<group>";
+		};
+		DCC6C7A32EB8CA8700C8D8AD /* FlashCard */ = {
+			isa = PBXGroup;
+			children = (
+				DCC6C7A42EB8CABA00C8D8AD /* FlashCard.swift */,
+			);
+			path = FlashCard;
 			sourceTree = "<group>";
 		};
 		DCCC84732E93C659006D8269 /* Components */ = {
@@ -492,6 +503,7 @@
 				3216DAB32CBE5466000F0475 /* IPAView.swift in Sources */,
 				3216DAB12CBE5455000F0475 /* HomeView.swift in Sources */,
 				3255C4FC2CC3C5AD000DDCBE /* LoginViewModel.swift in Sources */,
+				DCC6C7A52EB8CABA00C8D8AD /* FlashCard.swift in Sources */,
 				DC34A0DB2E9EE8FC00F3C608 /* CheckAnswerButton.swift in Sources */,
 				DCCC84752E93CC47006D8269 /* FillInTheBlank.swift in Sources */,
 				321497622CB3ED19008BF5C3 /* CustomButtonLogin.swift in Sources */,

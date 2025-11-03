@@ -40,21 +40,23 @@ struct HomeView: View {
                     Spacer()
                     
                     Grid(horizontalSpacing: 7){
+                        NavigationLink(
+                            destination: LevelListView()
+                        ){
+                            OptionButtonView(title: "Learn", imageName: "practice")
+                        }
+                        
                         GridRow{
-                            NavigationLink(
-                                destination: LevelListView()
-                            ){
-                                OptionButtonView(title: "Learn", imageName: "practice")
-                            }
                             NavigationLink(
                                 destination: IPAList()
                             ){
                                 OptionButtonView(title: "IPA", imageName: "podcast")
                             }
-                        }
-                        GridRow{
-                            OptionButtonView(title: "Music", imageName: "music")
-                            OptionButtonView(title: "Movie", imageName: "movie")
+                            NavigationLink(
+                                destination: FlashCard()
+                            ){
+                                OptionButtonView(title: "Flash card", imageName: "music")
+                            }
                         }
                     }
                 }
