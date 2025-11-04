@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import AVFoundation
 
 final class IPAListViewModel: ObservableObject{
+    private let synthesizer = AVSpeechSynthesizer()
+    private let voice = AVSpeechSynthesisVoice(language: "en-GB")
+    
     var vowels = [
         IPA(symbol: "i:", exampleWord: "sleep", audio1Url: "", audio2Url: ""),
         IPA(symbol: "ɪ", exampleWord: "slip", audio1Url: "", audio2Url: ""),
@@ -58,7 +62,15 @@ final class IPAListViewModel: ObservableObject{
         IPA(symbol: "j", exampleWord: "yet", audio1Url: "", audio2Url: "")
     ]
     
-    func playAudio(){
-        
+    func playAudio(word: String){
+        if(synthesizer.isSpeaking){
+            return
+        }
+        let utterance = AVSpeechUtterance(string: word)
+        utterance.rate = 0.3
+        utterance.pitchMultiplier = 0.8
+        utterance.volume = 1
+        utterance.voice = voice
+        synthesizer.speak(utterance)
     }
 }

@@ -25,14 +25,18 @@ struct IPAList: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     Section{
                         ForEach(iPAViewModel.vowels) { ipa in
-                            GridItemView(iPA: ipa)
+                            GridItemView(iPA: ipa){
+                                iPAViewModel.playAudio(word: ipa.exampleWord)
+                            }
                         }
                     } header: {
                         HeaderView(text: "Nguyên Âm")
                     }
                     Section{
                         ForEach(iPAViewModel.consonants) { ipa in
-                            GridItemView(iPA: ipa)
+                            GridItemView(iPA: ipa){
+                                iPAViewModel.playAudio(word: ipa.exampleWord)
+                            }
                         }
                     } header: {
                         HeaderView(text: "Phụ Âm")
@@ -61,10 +65,11 @@ struct HeaderView: View {
 
 struct GridItemView: View {
     let iPA: IPA
+    let action: ()->Void
     
     var body: some View {
         Button(action:{
-            
+            action()
         }, label: {
             ZStack{
                 RoundedRectangle(cornerRadius: 10)
