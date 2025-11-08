@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct FlashCard: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            CustomNavigationBar(goBack: {
+                dismiss()
+            })
+            Spacer()
+            Text("FlashCard placeholder")
+            Spacer()
+        }
+        .background(Color("BackgroundColor"))
+        .toolbar(.hidden, for: .navigationBar)
     }
 }
 
