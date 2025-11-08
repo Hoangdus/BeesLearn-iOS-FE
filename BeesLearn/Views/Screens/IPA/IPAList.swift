@@ -26,7 +26,7 @@ struct IPAList: View {
                     Section{
                         ForEach(iPAViewModel.vowels) { ipa in
                             GridItemView(iPA: ipa){
-                                iPAViewModel.playAudio(word: ipa.exampleWord)
+                                iPAViewModel.playAudio(iPA: ipa)
                             }
                         }
                     } header: {
@@ -35,7 +35,7 @@ struct IPAList: View {
                     Section{
                         ForEach(iPAViewModel.consonants) { ipa in
                             GridItemView(iPA: ipa){
-                                iPAViewModel.playAudio(word: ipa.exampleWord)
+                                iPAViewModel.playAudio(iPA: ipa)
                             }
                         }
                     } header: {

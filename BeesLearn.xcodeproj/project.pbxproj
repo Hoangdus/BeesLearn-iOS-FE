@@ -42,6 +42,51 @@
 		DCA79A462E8E338200A3AD55 /* QuestionHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A452E8E338200A3AD55 /* QuestionHostView.swift */; };
 		DCA79A482E8ECF1B00A3AD55 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */; };
 		DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */; };
+		DCC154612EBF646C00D58899 /* əʊ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154552EBF646C00D58899 /* əʊ.mp3 */; };
+		DCC154622EBF646C00D58899 /* e.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154512EBF646C00D58899 /* e.mp3 */; };
+		DCC154632EBF646C00D58899 /* ɪə.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154592EBF646C00D58899 /* ɪə.mp3 */; };
+		DCC154642EBF646C00D58899 /* ɔ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1545A2EBF646C00D58899 /* ɔ.mp3 */; };
+		DCC154652EBF646C00D58899 /* ʊ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1545D2EBF646C00D58899 /* ʊ.mp3 */; };
+		DCC154662EBF646C00D58899 /* ɪ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154582EBF646C00D58899 /* ɪ.mp3 */; };
+		DCC154672EBF646C00D58899 /* æ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1544C2EBF646C00D58899 /* æ.mp3 */; };
+		DCC154682EBF646C00D58899 /* aɪ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1544D2EBF646C00D58899 /* aɪ.mp3 */; };
+		DCC154692EBF646C00D58899 /* ə.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154542EBF646C00D58899 /* ə.mp3 */; };
+		DCC1546A2EBF646C00D58899 /* ɒ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154502EBF646C00D58899 /* ɒ.mp3 */; };
+		DCC1546B2EBF646C00D58899 /* ɜ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154562EBF646C00D58899 /* ɜ.mp3 */; };
+		DCC1546C2EBF646C00D58899 /* eə.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154522EBF646C00D58899 /* eə.mp3 */; };
+		DCC1546D2EBF646C00D58899 /* ɔɪ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1545B2EBF646C00D58899 /* ɔɪ.mp3 */; };
+		DCC1546E2EBF646C00D58899 /* eɪ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154532EBF646C00D58899 /* eɪ.mp3 */; };
+		DCC1546F2EBF646C00D58899 /* ʊə.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1545E2EBF646C00D58899 /* ʊə.mp3 */; };
+		DCC154702EBF646C00D58899 /* ɑ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1544F2EBF646C00D58899 /* ɑ.mp3 */; };
+		DCC154712EBF646C00D58899 /* aʊ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1544E2EBF646C00D58899 /* aʊ.mp3 */; };
+		DCC154722EBF646C00D58899 /* ʌ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1545F2EBF646C00D58899 /* ʌ.mp3 */; };
+		DCC154732EBF646C00D58899 /* i.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154572EBF646C00D58899 /* i.mp3 */; };
+		DCC154742EBF646C00D58899 /* u.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1545C2EBF646C00D58899 /* u.mp3 */; };
+		DCC1548E2EBF6DAB00D58899 /* j.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1547D2EBF6DAB00D58899 /* j.mp3 */; };
+		DCC1548F2EBF6DAB00D58899 /* s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154852EBF6DAB00D58899 /* s.mp3 */; };
+		DCC154902EBF6DAB00D58899 /* t∫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154872EBF6DAB00D58899 /* t∫.mp3 */; };
+		DCC154912EBF6DAB00D58899 /* ∫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154752EBF6DAB00D58899 /* ∫.mp3 */; };
+		DCC154922EBF6DAB00D58899 /* ð.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154782EBF6DAB00D58899 /* ð.mp3 */; };
+		DCC154932EBF6DAB00D58899 /* ŋ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154822EBF6DAB00D58899 /* ŋ.mp3 */; };
+		DCC154942EBF6DAB00D58899 /* p.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154832EBF6DAB00D58899 /* p.mp3 */; };
+		DCC154952EBF6DAB00D58899 /* θ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1548C2EBF6DAB00D58899 /* θ.mp3 */; };
+		DCC154962EBF6DAB00D58899 /* h.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1547C2EBF6DAB00D58899 /* h.mp3 */; };
+		DCC154972EBF6DAB00D58899 /* r.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154842EBF6DAB00D58899 /* r.mp3 */; };
+		DCC154982EBF6DAB00D58899 /* v.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154882EBF6DAB00D58899 /* v.mp3 */; };
+		DCC154992EBF6DAB00D58899 /* n.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154812EBF6DAB00D58899 /* n.mp3 */; };
+		DCC1549A2EBF6DAB00D58899 /* f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1547A2EBF6DAB00D58899 /* f.mp3 */; };
+		DCC1549B2EBF6DAB00D58899 /* m.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154802EBF6DAB00D58899 /* m.mp3 */; };
+		DCC1549C2EBF6DAB00D58899 /* l.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1547F2EBF6DAB00D58899 /* l.mp3 */; };
+		DCC1549D2EBF6DAB00D58899 /* d.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154772EBF6DAB00D58899 /* d.mp3 */; };
+		DCC1549E2EBF6DAB00D58899 /* w.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154892EBF6DAB00D58899 /* w.mp3 */; };
+		DCC1549F2EBF6DAB00D58899 /* t.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154862EBF6DAB00D58899 /* t.mp3 */; };
+		DCC154A02EBF6DAB00D58899 /* dʒ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154792EBF6DAB00D58899 /* dʒ.mp3 */; };
+		DCC154A12EBF6DAB00D58899 /* k.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1547E2EBF6DAB00D58899 /* k.mp3 */; };
+		DCC154A22EBF6DAB00D58899 /* ʒ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1548B2EBF6DAB00D58899 /* ʒ.mp3 */; };
+		DCC154A32EBF6DAB00D58899 /* g.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1547B2EBF6DAB00D58899 /* g.mp3 */; };
+		DCC154A42EBF6DAB00D58899 /* z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC1548A2EBF6DAB00D58899 /* z.mp3 */; };
+		DCC154A52EBF6DAB00D58899 /* b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154762EBF6DAB00D58899 /* b.mp3 */; };
+		DCC154A72EBF6E6B00D58899 /* Nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCC154A62EBF6E6B00D58899 /* Nunito.ttf */; };
 		DCC6C79E2EB5BB7500C8D8AD /* IPAList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6C79D2EB5BB7500C8D8AD /* IPAList.swift */; };
 		DCC6C7A02EB7379F00C8D8AD /* IPA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6C79F2EB7379F00C8D8AD /* IPA.swift */; };
 		DCC6C7A22EB73BB700C8D8AD /* IPAListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6C7A12EB73BB700C8D8AD /* IPAListViewModel.swift */; };
@@ -110,6 +155,51 @@
 		DCA79A452E8E338200A3AD55 /* QuestionHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHostView.swift; sourceTree = "<group>"; };
 		DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoices.swift; sourceTree = "<group>"; };
+		DCC1544C2EBF646C00D58899 /* æ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "æ.mp3"; sourceTree = "<group>"; };
+		DCC1544D2EBF646C00D58899 /* aɪ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aɪ.mp3"; sourceTree = "<group>"; };
+		DCC1544E2EBF646C00D58899 /* aʊ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aʊ.mp3"; sourceTree = "<group>"; };
+		DCC1544F2EBF646C00D58899 /* ɑ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ɑ.mp3"; sourceTree = "<group>"; };
+		DCC154502EBF646C00D58899 /* ɒ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ɒ.mp3"; sourceTree = "<group>"; };
+		DCC154512EBF646C00D58899 /* e.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = e.mp3; sourceTree = "<group>"; };
+		DCC154522EBF646C00D58899 /* eə.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "eə.mp3"; sourceTree = "<group>"; };
+		DCC154532EBF646C00D58899 /* eɪ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "eɪ.mp3"; sourceTree = "<group>"; };
+		DCC154542EBF646C00D58899 /* ə.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ə.mp3"; sourceTree = "<group>"; };
+		DCC154552EBF646C00D58899 /* əʊ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "əʊ.mp3"; sourceTree = "<group>"; };
+		DCC154562EBF646C00D58899 /* ɜ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ɜ.mp3"; sourceTree = "<group>"; };
+		DCC154572EBF646C00D58899 /* i.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i.mp3; sourceTree = "<group>"; };
+		DCC154582EBF646C00D58899 /* ɪ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ɪ.mp3"; sourceTree = "<group>"; };
+		DCC154592EBF646C00D58899 /* ɪə.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ɪə.mp3"; sourceTree = "<group>"; };
+		DCC1545A2EBF646C00D58899 /* ɔ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ɔ.mp3"; sourceTree = "<group>"; };
+		DCC1545B2EBF646C00D58899 /* ɔɪ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ɔɪ.mp3"; sourceTree = "<group>"; };
+		DCC1545C2EBF646C00D58899 /* u.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = u.mp3; sourceTree = "<group>"; };
+		DCC1545D2EBF646C00D58899 /* ʊ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ʊ.mp3"; sourceTree = "<group>"; };
+		DCC1545E2EBF646C00D58899 /* ʊə.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ʊə.mp3"; sourceTree = "<group>"; };
+		DCC1545F2EBF646C00D58899 /* ʌ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ʌ.mp3"; sourceTree = "<group>"; };
+		DCC154752EBF6DAB00D58899 /* ∫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "∫.mp3"; sourceTree = "<group>"; };
+		DCC154762EBF6DAB00D58899 /* b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = b.mp3; sourceTree = "<group>"; };
+		DCC154772EBF6DAB00D58899 /* d.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = d.mp3; sourceTree = "<group>"; };
+		DCC154782EBF6DAB00D58899 /* ð.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ð.mp3"; sourceTree = "<group>"; };
+		DCC154792EBF6DAB00D58899 /* dʒ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dʒ.mp3"; sourceTree = "<group>"; };
+		DCC1547A2EBF6DAB00D58899 /* f.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f.mp3; sourceTree = "<group>"; };
+		DCC1547B2EBF6DAB00D58899 /* g.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = g.mp3; sourceTree = "<group>"; };
+		DCC1547C2EBF6DAB00D58899 /* h.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = h.mp3; sourceTree = "<group>"; };
+		DCC1547D2EBF6DAB00D58899 /* j.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = j.mp3; sourceTree = "<group>"; };
+		DCC1547E2EBF6DAB00D58899 /* k.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = k.mp3; sourceTree = "<group>"; };
+		DCC1547F2EBF6DAB00D58899 /* l.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = l.mp3; sourceTree = "<group>"; };
+		DCC154802EBF6DAB00D58899 /* m.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m.mp3; sourceTree = "<group>"; };
+		DCC154812EBF6DAB00D58899 /* n.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = n.mp3; sourceTree = "<group>"; };
+		DCC154822EBF6DAB00D58899 /* ŋ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ŋ.mp3"; sourceTree = "<group>"; };
+		DCC154832EBF6DAB00D58899 /* p.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = p.mp3; sourceTree = "<group>"; };
+		DCC154842EBF6DAB00D58899 /* r.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = r.mp3; sourceTree = "<group>"; };
+		DCC154852EBF6DAB00D58899 /* s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = s.mp3; sourceTree = "<group>"; };
+		DCC154862EBF6DAB00D58899 /* t.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = t.mp3; sourceTree = "<group>"; };
+		DCC154872EBF6DAB00D58899 /* t∫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "t∫.mp3"; sourceTree = "<group>"; };
+		DCC154882EBF6DAB00D58899 /* v.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = v.mp3; sourceTree = "<group>"; };
+		DCC154892EBF6DAB00D58899 /* w.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = w.mp3; sourceTree = "<group>"; };
+		DCC1548A2EBF6DAB00D58899 /* z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = z.mp3; sourceTree = "<group>"; };
+		DCC1548B2EBF6DAB00D58899 /* ʒ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ʒ.mp3"; sourceTree = "<group>"; };
+		DCC1548C2EBF6DAB00D58899 /* θ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "θ.mp3"; sourceTree = "<group>"; };
+		DCC154A62EBF6E6B00D58899 /* Nunito.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nunito.ttf; sourceTree = "<group>"; };
 		DCC6C79D2EB5BB7500C8D8AD /* IPAList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAList.swift; sourceTree = "<group>"; };
 		DCC6C79F2EB7379F00C8D8AD /* IPA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPA.swift; sourceTree = "<group>"; };
 		DCC6C7A12EB73BB700C8D8AD /* IPAListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAListViewModel.swift; sourceTree = "<group>"; };
@@ -266,6 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				3214974A2CB16F2F008BF5C3 /* Fonts */,
+				DCC154602EBF646C00D58899 /* Vowels */,
+				DCC1548D2EBF6DAB00D58899 /* Consonants */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -273,6 +365,7 @@
 		3214974A2CB16F2F008BF5C3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				DCC154A62EBF6E6B00D58899 /* Nunito.ttf */,
 				DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */,
 				321497632CB3F57C008BF5C3 /* Nunito-Bold.ttf */,
 			);
@@ -310,6 +403,64 @@
 				DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */,
 			);
 			path = QuestionViews;
+			sourceTree = "<group>";
+		};
+		DCC154602EBF646C00D58899 /* Vowels */ = {
+			isa = PBXGroup;
+			children = (
+				DCC1544C2EBF646C00D58899 /* æ.mp3 */,
+				DCC1544D2EBF646C00D58899 /* aɪ.mp3 */,
+				DCC1544E2EBF646C00D58899 /* aʊ.mp3 */,
+				DCC1544F2EBF646C00D58899 /* ɑ.mp3 */,
+				DCC154502EBF646C00D58899 /* ɒ.mp3 */,
+				DCC154512EBF646C00D58899 /* e.mp3 */,
+				DCC154522EBF646C00D58899 /* eə.mp3 */,
+				DCC154532EBF646C00D58899 /* eɪ.mp3 */,
+				DCC154542EBF646C00D58899 /* ə.mp3 */,
+				DCC154552EBF646C00D58899 /* əʊ.mp3 */,
+				DCC154562EBF646C00D58899 /* ɜ.mp3 */,
+				DCC154572EBF646C00D58899 /* i.mp3 */,
+				DCC154582EBF646C00D58899 /* ɪ.mp3 */,
+				DCC154592EBF646C00D58899 /* ɪə.mp3 */,
+				DCC1545A2EBF646C00D58899 /* ɔ.mp3 */,
+				DCC1545B2EBF646C00D58899 /* ɔɪ.mp3 */,
+				DCC1545C2EBF646C00D58899 /* u.mp3 */,
+				DCC1545D2EBF646C00D58899 /* ʊ.mp3 */,
+				DCC1545E2EBF646C00D58899 /* ʊə.mp3 */,
+				DCC1545F2EBF646C00D58899 /* ʌ.mp3 */,
+			);
+			path = Vowels;
+			sourceTree = "<group>";
+		};
+		DCC1548D2EBF6DAB00D58899 /* Consonants */ = {
+			isa = PBXGroup;
+			children = (
+				DCC154752EBF6DAB00D58899 /* ∫.mp3 */,
+				DCC154762EBF6DAB00D58899 /* b.mp3 */,
+				DCC154772EBF6DAB00D58899 /* d.mp3 */,
+				DCC154782EBF6DAB00D58899 /* ð.mp3 */,
+				DCC154792EBF6DAB00D58899 /* dʒ.mp3 */,
+				DCC1547A2EBF6DAB00D58899 /* f.mp3 */,
+				DCC1547B2EBF6DAB00D58899 /* g.mp3 */,
+				DCC1547C2EBF6DAB00D58899 /* h.mp3 */,
+				DCC1547D2EBF6DAB00D58899 /* j.mp3 */,
+				DCC1547E2EBF6DAB00D58899 /* k.mp3 */,
+				DCC1547F2EBF6DAB00D58899 /* l.mp3 */,
+				DCC154802EBF6DAB00D58899 /* m.mp3 */,
+				DCC154812EBF6DAB00D58899 /* n.mp3 */,
+				DCC154822EBF6DAB00D58899 /* ŋ.mp3 */,
+				DCC154832EBF6DAB00D58899 /* p.mp3 */,
+				DCC154842EBF6DAB00D58899 /* r.mp3 */,
+				DCC154852EBF6DAB00D58899 /* s.mp3 */,
+				DCC154862EBF6DAB00D58899 /* t.mp3 */,
+				DCC154872EBF6DAB00D58899 /* t∫.mp3 */,
+				DCC154882EBF6DAB00D58899 /* v.mp3 */,
+				DCC154892EBF6DAB00D58899 /* w.mp3 */,
+				DCC1548A2EBF6DAB00D58899 /* z.mp3 */,
+				DCC1548B2EBF6DAB00D58899 /* ʒ.mp3 */,
+				DCC1548C2EBF6DAB00D58899 /* θ.mp3 */,
+			);
+			path = Consonants;
 			sourceTree = "<group>";
 		};
 		DCC6C7992EB5BB4800C8D8AD /* Learn */ = {
@@ -459,6 +610,51 @@
 				DC4722DE2E84A363005E6FE5 /* Nunito-SemiBold.ttf in Resources */,
 				321497202CB1688D008BF5C3 /* Preview Assets.xcassets in Resources */,
 				321497642CB3F57C008BF5C3 /* Nunito-Bold.ttf in Resources */,
+				DCC154612EBF646C00D58899 /* əʊ.mp3 in Resources */,
+				DCC154622EBF646C00D58899 /* e.mp3 in Resources */,
+				DCC154632EBF646C00D58899 /* ɪə.mp3 in Resources */,
+				DCC154642EBF646C00D58899 /* ɔ.mp3 in Resources */,
+				DCC154652EBF646C00D58899 /* ʊ.mp3 in Resources */,
+				DCC154662EBF646C00D58899 /* ɪ.mp3 in Resources */,
+				DCC154672EBF646C00D58899 /* æ.mp3 in Resources */,
+				DCC154682EBF646C00D58899 /* aɪ.mp3 in Resources */,
+				DCC154692EBF646C00D58899 /* ə.mp3 in Resources */,
+				DCC1546A2EBF646C00D58899 /* ɒ.mp3 in Resources */,
+				DCC1546B2EBF646C00D58899 /* ɜ.mp3 in Resources */,
+				DCC1546C2EBF646C00D58899 /* eə.mp3 in Resources */,
+				DCC1546D2EBF646C00D58899 /* ɔɪ.mp3 in Resources */,
+				DCC1546E2EBF646C00D58899 /* eɪ.mp3 in Resources */,
+				DCC1546F2EBF646C00D58899 /* ʊə.mp3 in Resources */,
+				DCC154702EBF646C00D58899 /* ɑ.mp3 in Resources */,
+				DCC154712EBF646C00D58899 /* aʊ.mp3 in Resources */,
+				DCC1548E2EBF6DAB00D58899 /* j.mp3 in Resources */,
+				DCC1548F2EBF6DAB00D58899 /* s.mp3 in Resources */,
+				DCC154902EBF6DAB00D58899 /* t∫.mp3 in Resources */,
+				DCC154912EBF6DAB00D58899 /* ∫.mp3 in Resources */,
+				DCC154922EBF6DAB00D58899 /* ð.mp3 in Resources */,
+				DCC154932EBF6DAB00D58899 /* ŋ.mp3 in Resources */,
+				DCC154942EBF6DAB00D58899 /* p.mp3 in Resources */,
+				DCC154952EBF6DAB00D58899 /* θ.mp3 in Resources */,
+				DCC154962EBF6DAB00D58899 /* h.mp3 in Resources */,
+				DCC154972EBF6DAB00D58899 /* r.mp3 in Resources */,
+				DCC154982EBF6DAB00D58899 /* v.mp3 in Resources */,
+				DCC154992EBF6DAB00D58899 /* n.mp3 in Resources */,
+				DCC1549A2EBF6DAB00D58899 /* f.mp3 in Resources */,
+				DCC1549B2EBF6DAB00D58899 /* m.mp3 in Resources */,
+				DCC154A72EBF6E6B00D58899 /* Nunito.ttf in Resources */,
+				DCC1549C2EBF6DAB00D58899 /* l.mp3 in Resources */,
+				DCC1549D2EBF6DAB00D58899 /* d.mp3 in Resources */,
+				DCC1549E2EBF6DAB00D58899 /* w.mp3 in Resources */,
+				DCC1549F2EBF6DAB00D58899 /* t.mp3 in Resources */,
+				DCC154A02EBF6DAB00D58899 /* dʒ.mp3 in Resources */,
+				DCC154A12EBF6DAB00D58899 /* k.mp3 in Resources */,
+				DCC154A22EBF6DAB00D58899 /* ʒ.mp3 in Resources */,
+				DCC154A32EBF6DAB00D58899 /* g.mp3 in Resources */,
+				DCC154A42EBF6DAB00D58899 /* z.mp3 in Resources */,
+				DCC154A52EBF6DAB00D58899 /* b.mp3 in Resources */,
+				DCC154722EBF646C00D58899 /* ʌ.mp3 in Resources */,
+				DCC154732EBF646C00D58899 /* i.mp3 in Resources */,
+				DCC154742EBF646C00D58899 /* u.mp3 in Resources */,
 				3214971D2CB1688D008BF5C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
