@@ -31,6 +31,7 @@
 		326F10892CD996E000E3EF08 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326F10882CD996E000E3EF08 /* Translation.swift */; };
 		DC125CE22EA6D36400E85624 /* ProgressNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC125CE12EA6D36400E85624 /* ProgressNavigationBar.swift */; };
 		DC125CE42EA6D68400E85624 /* QuestionHostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC125CE32EA6D68400E85624 /* QuestionHostViewModel.swift */; };
+		DC19A2C82EC5BB6400B1648B /* ResultPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19A2C72EC5BB6400B1648B /* ResultPopUp.swift */; };
 		DC34A0DB2E9EE8FC00F3C608 /* CheckAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */; };
 		DC34A0DD2E9FBE2700F3C608 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */; };
 		DC4722DE2E84A363005E6FE5 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */; };
@@ -144,6 +145,7 @@
 		326F10882CD996E000E3EF08 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		DC125CE12EA6D36400E85624 /* ProgressNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressNavigationBar.swift; sourceTree = "<group>"; };
 		DC125CE32EA6D68400E85624 /* QuestionHostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHostViewModel.swift; sourceTree = "<group>"; };
+		DC19A2C72EC5BB6400B1648B /* ResultPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPopUp.swift; sourceTree = "<group>"; };
 		DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnswerButton.swift; sourceTree = "<group>"; };
 		DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -499,6 +501,7 @@
 				DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */,
 				DCDB13632EA199C5006AB500 /* AnswerChip.swift */,
 				DCCC84712E93C641006D8269 /* QuestionBox.swift */,
+				DC19A2C72EC5BB6400B1648B /* ResultPopUp.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 				DCA79A482E8ECF1B00A3AD55 /* CustomNavigationBar.swift in Sources */,
 				3214971B2CB1688B008BF5C3 /* ContentView.swift in Sources */,
 				3216DAB72CBE54C5000F0475 /* SettingView.swift in Sources */,
+				DC19A2C82EC5BB6400B1648B /* ResultPopUp.swift in Sources */,
 				3214976A2CB45E07008BF5C3 /* CustomButton.swift in Sources */,
 				DC34A0DD2E9FBE2700F3C608 /* QuestionViewModel.swift in Sources */,
 				DC9EB3402EA97064001E877B /* Question.swift in Sources */,

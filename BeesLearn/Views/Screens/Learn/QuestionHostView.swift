@@ -46,10 +46,18 @@ struct QuestionHostView: View {
                     })
                     .scrollTargetBehavior(.viewAligned)
                     .scrollIndicators(.hidden)
-                    .allowsHitTesting(hostViewModel.progress == 1 ? false : true)
+                    .allowsHitTesting(hostViewModel.result != nil ? false : true)
                     .scrollDisabled(true)
+                    .overlay(alignment: .bottom){
+                        if(hostViewModel.result != nil){
+                            ResultPopUp(correctness: hostViewModel.result!, action: {
+                                hostViewModel.CompleteQuestion()
+                            })
+                        }
+                    }
                 }
             }
+            
         }
         .background(Color("BackgroundColor"))
         .toolbar(.hidden, for: .navigationBar)

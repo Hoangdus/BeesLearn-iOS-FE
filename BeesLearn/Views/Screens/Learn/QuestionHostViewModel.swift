@@ -49,25 +49,26 @@ final class QuestionHostViewModel: ObservableObject{
                 self.result = .incorrect
             }
         }
+        progress += 0.25
+        
+        
         print(self.result)
-        CompleteQuestion()
+//        CompleteQuestion()
     }
     
     func CompleteQuestion(){
-        progress += 0.25
-        
+        if(progress == 1){
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                self.dismissQuestionHostView = true
+//            })
+            return
+        }
         questionProgress += 1
         if(questionProgress < questions.count){
             nextQuestionID = questions[questionProgress].id
             currentQuestion = questions[questionProgress]
             result = nil
             print("next question id: \(nextQuestionID!)")
-        }
-        
-        if(progress == 1){
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                self.dismissQuestionHostView = true
-            })
         }
     }
 }
