@@ -21,7 +21,7 @@ final class QuestionHostViewModel: ObservableObject{
         MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
         MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
         MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
-        TrueFalseQuestion(content: "is this a test?", tfAnswer: false)
+        TrueFalseQuestion(content: "is this a test?", answer: "1")
     ]
     
     private var questionProgress = 0
@@ -46,7 +46,7 @@ final class QuestionHostViewModel: ObservableObject{
     func checkAnswer<T>(answer: T){
         if currentQuestion is TrueFalseQuestion{
             let trueFalseQuestion = currentQuestion as! TrueFalseQuestion
-            if (trueFalseQuestion.checkAnswer(answer: answer as! Bool)){
+            if (trueFalseQuestion.checkAnswer(answer: answer as! String)){
                 self.result = .correct
             }else{
                 self.result = .incorrect

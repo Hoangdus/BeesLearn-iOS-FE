@@ -9,17 +9,17 @@ import SwiftUI
 
 struct TrueFalse: View {
     var question: TrueFalseQuestion
-    var onCompleteQuestion: (_ correctness: Bool)->Void
+    var onCompleteQuestion: (_ correctness: String)->Void
     var body: some View {
         VStack(){
             QuestionBox(question: "Đúng hay Sai?", content: question.content)
             Spacer()
             HStack(spacing: 90){
                 answerButtonView(type: false){ i in
-                    onCompleteQuestion(i)
+                    onCompleteQuestion("0")
                 }
                 answerButtonView(type: true){ i in
-                    onCompleteQuestion(i)
+                    onCompleteQuestion("1")
                 }
             }
             Spacer()

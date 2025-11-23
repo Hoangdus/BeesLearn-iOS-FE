@@ -8,14 +8,9 @@
 import Foundation
 
 final class TrueFalseQuestion: Question{
-    var tfAnswer: Bool
     
-    init(content: String, tfAnswer: Bool) {
-        self.tfAnswer = tfAnswer
-        super.init(content: content)
+    func checkAnswer(answer: String) -> Bool{
+        return answer == self.answer
     }
     
-    func checkAnswer(answer: Bool) -> Bool{
-        return answer == tfAnswer
-    }
 }
