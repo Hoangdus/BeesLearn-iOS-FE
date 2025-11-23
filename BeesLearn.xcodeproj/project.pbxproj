@@ -35,6 +35,10 @@
 		DC34A0DB2E9EE8FC00F3C608 /* CheckAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */; };
 		DC34A0DD2E9FBE2700F3C608 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */; };
 		DC4722DE2E84A363005E6FE5 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */; };
+		DC6B582D2ECFA34300B40045 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B582C2ECFA34300B40045 /* APIService.swift */; };
+		DC6B582F2ED117D900B40045 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B582E2ED117D900B40045 /* Word.swift */; };
+		DC6B58312ED1186D00B40045 /* QuestionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B58302ED1186D00B40045 /* QuestionsResponse.swift */; };
+		DC6B58332ED2EC0900B40045 /* Sentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B58322ED2EC0900B40045 /* Sentence.swift */; };
 		DC9EB3402EA97064001E877B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EB33F2EA97064001E877B /* Question.swift */; };
 		DC9EB3422EA970C9001E877B /* TrueFalseQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EB3412EA970C9001E877B /* TrueFalseQuestion.swift */; };
 		DC9EB3462EAC1024001E877B /* MultipleChoiceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EB3452EAC1024001E877B /* MultipleChoiceQuestion.swift */; };
@@ -149,6 +153,10 @@
 		DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnswerButton.swift; sourceTree = "<group>"; };
 		DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		DC6B582C2ECFA34300B40045 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DC6B582E2ED117D900B40045 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		DC6B58302ED1186D00B40045 /* QuestionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsResponse.swift; sourceTree = "<group>"; };
+		DC6B58322ED2EC0900B40045 /* Sentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence.swift; sourceTree = "<group>"; };
 		DC9EB33F2EA97064001E877B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		DC9EB3412EA970C9001E877B /* TrueFalseQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseQuestion.swift; sourceTree = "<group>"; };
 		DC9EB3452EAC1024001E877B /* MultipleChoiceQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceQuestion.swift; sourceTree = "<group>"; };
@@ -307,6 +315,8 @@
 				DC9EB3412EA970C9001E877B /* TrueFalseQuestion.swift */,
 				DC9EB3452EAC1024001E877B /* MultipleChoiceQuestion.swift */,
 				DCC6C79F2EB7379F00C8D8AD /* IPA.swift */,
+				DC6B582E2ED117D900B40045 /* Word.swift */,
+				DC6B58322ED2EC0900B40045 /* Sentence.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,6 +345,8 @@
 		321497452CB16E4B008BF5C3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DC6B582C2ECFA34300B40045 /* APIService.swift */,
+				DC6B58302ED1186D00B40045 /* QuestionsResponse.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -686,6 +698,7 @@
 				3255C5002CD248AA000DDCBE /* CustomTopBar.swift in Sources */,
 				DCCC84702E93C516006D8269 /* TrueFalse.swift in Sources */,
 				DCDB13642EA199C5006AB500 /* AnswerChip.swift in Sources */,
+				DC6B58312ED1186D00B40045 /* QuestionsResponse.swift in Sources */,
 				DCA79A422E8B016600A3AD55 /* LevelListView.swift in Sources */,
 				DC125CE42EA6D68400E85624 /* QuestionHostViewModel.swift in Sources */,
 				DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */,
@@ -700,11 +713,13 @@
 				3214976A2CB45E07008BF5C3 /* CustomButton.swift in Sources */,
 				DC34A0DD2E9FBE2700F3C608 /* QuestionViewModel.swift in Sources */,
 				DC9EB3402EA97064001E877B /* Question.swift in Sources */,
+				DC6B582F2ED117D900B40045 /* Word.swift in Sources */,
 				3216DAB32CBE5466000F0475 /* IPAView.swift in Sources */,
 				3216DAB12CBE5455000F0475 /* HomeView.swift in Sources */,
 				3255C4FC2CC3C5AD000DDCBE /* LoginViewModel.swift in Sources */,
 				DCC6C7A52EB8CABA00C8D8AD /* FlashCard.swift in Sources */,
 				DC34A0DB2E9EE8FC00F3C608 /* CheckAnswerButton.swift in Sources */,
+				DC6B582D2ECFA34300B40045 /* APIService.swift in Sources */,
 				DCCC84752E93CC47006D8269 /* FillInTheBlank.swift in Sources */,
 				321497622CB3ED19008BF5C3 /* CustomButtonLogin.swift in Sources */,
 				DC125CE22EA6D36400E85624 /* ProgressNavigationBar.swift in Sources */,
@@ -720,6 +735,7 @@
 				DCC6C79E2EB5BB7500C8D8AD /* IPAList.swift in Sources */,
 				3214976C2CB68F5F008BF5C3 /* SignUpView.swift in Sources */,
 				DC9EB3462EAC1024001E877B /* MultipleChoiceQuestion.swift in Sources */,
+				DC6B58332ED2EC0900B40045 /* Sentence.swift in Sources */,
 				321497192CB1688B008BF5C3 /* BeesLearnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

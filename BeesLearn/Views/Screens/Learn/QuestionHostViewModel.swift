@@ -27,10 +27,20 @@ final class QuestionHostViewModel: ObservableObject{
     private var questionProgress = 0
     private var currentQuestion: Question?
     
+    private var apiService = APIService.share
+    
     init() {
         self.questions.shuffle()
         print("question list: \(questions)")
         self.currentQuestion = self.questions[questionProgress]
+        apiService.getQuestions(complete: { result in
+            switch result {
+            case .success(let questionData):
+                print(questionData)
+            case .failure(let error):
+                print(error)
+            }
+        })
     }
     
     func checkAnswer<T>(answer: T){
