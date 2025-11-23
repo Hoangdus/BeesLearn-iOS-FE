@@ -19,6 +19,10 @@ final class MultipleChoiceQuestion: Question{
         super.init(content: content, answer: answer)
     }
     
+    required init(from decoder: any Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
+    
     func checkAnswer(answer: String) -> Bool{
         return answer == self.answer
     }
