@@ -21,8 +21,10 @@ struct ProgressNavigationBar: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 34)
+                    .tint(Color("ButtonColor"))
             })
             ProgressView(value: progress)
+                .tint(Color("ButtonColor"))
             Spacer()
         }
         .frame(height: 45)

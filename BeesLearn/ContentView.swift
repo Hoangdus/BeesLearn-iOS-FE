@@ -64,7 +64,7 @@ struct ContentView: View {
                 }
                 .tag(3)
         }
-        .tint(Color("AccentColor"))
+        .tint(Color("ButtonColor"))
     }
 }
 

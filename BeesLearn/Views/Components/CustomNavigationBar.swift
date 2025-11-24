@@ -19,6 +19,7 @@ struct CustomNavigationBar: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 34)
+                    .tint(Color("ButtonColor"))
             })
             Spacer()
         }
