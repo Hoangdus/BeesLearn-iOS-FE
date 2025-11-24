@@ -8,7 +8,7 @@
 import Foundation
 
 struct QuestionsResponse: Decodable{
-    var trueFalseQuestions: [Question]
+    var trueFalseQuestions: [TrueFalseQuestion]
     var words: [Word]
     var sentences: [Sentence]
 }
