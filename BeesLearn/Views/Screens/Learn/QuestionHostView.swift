@@ -18,46 +18,52 @@ struct QuestionHostView: View {
             }
             
             GeometryReader{ geometry in
-                ScrollViewReader{ proxy in
-                    ScrollView(.horizontal){
-                        LazyHStack(spacing: 0){
-                            ForEach(hostViewModel.questions){ question in
-                                if(question is TrueFalseQuestion){
-                                    TrueFalse(question: question as! TrueFalseQuestion, onCompleteQuestion: { correctness in
-                                        hostViewModel.checkAnswer(answer: correctness)
-                                    })
-                                    .frame(width: geometry.size.width)
-                                    .id(question.id)
-                                }else{
-                                    MultipleChoices(question: question as! MultipleChoiceQuestion, onCompleteQuestion: { answer in
-                                        hostViewModel.checkAnswer(answer: answer)
-                                    })
-                                    .frame(width: geometry.size.width)
-                                    .id(question.id)
+                if(hostViewModel.questions.isEmpty){
+                    ProgressView()
+                        .tint(Color("ButtonColor"))
+                        .controlSize(.large)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                }else{
+                    ScrollViewReader{ proxy in
+                        ScrollView(.horizontal){
+                            LazyHStack(spacing: 0){
+                                ForEach(hostViewModel.questions){ question in
+                                    if(question is TrueFalseQuestion){
+                                        TrueFalse(question: question as! TrueFalseQuestion, onCompleteQuestion: { correctness in
+                                            hostViewModel.checkAnswer(answer: correctness)
+                                        })
+                                        .frame(width: geometry.size.width)
+                                        .id(question.id)
+                                    }else{
+                                        MultipleChoices(question: question as! MultipleChoiceQuestion, onCompleteQuestion: { answer in
+                                            hostViewModel.checkAnswer(answer: answer)
+                                        })
+                                        .frame(width: geometry.size.width)
+                                        .id(question.id)
+                                    }
                                 }
                             }
+                            .scrollTargetLayout()
                         }
-                        .scrollTargetLayout()
-                    }
-                    .onChange(of: hostViewModel.nextQuestionID, {
-                        withAnimation(.default, {
-                            proxy.scrollTo(hostViewModel.nextQuestionID)
-                        })
-                    })
-                    .scrollTargetBehavior(.viewAligned)
-                    .scrollIndicators(.hidden)
-                    .allowsHitTesting(hostViewModel.result != nil ? false : true)
-                    .scrollDisabled(true)
-                    .overlay(alignment: .bottom){
-                        if(hostViewModel.result != nil){
-                            ResultPopUp(correctness: hostViewModel.result!, action: {
-                                hostViewModel.CompleteQuestion()
+                        .onChange(of: hostViewModel.nextQuestionID, {
+                            withAnimation(.default, {
+                                proxy.scrollTo(hostViewModel.nextQuestionID)
                             })
+                        })
+                        .scrollTargetBehavior(.viewAligned)
+                        .scrollIndicators(.hidden)
+                        .allowsHitTesting(hostViewModel.result != nil ? false : true)
+                        .scrollDisabled(true)
+                        .overlay(alignment: .bottom){
+                            if(hostViewModel.result != nil){
+                                ResultPopUp(correctness: hostViewModel.result!, action: {
+                                    hostViewModel.CompleteQuestion()
+                                })
+                            }
                         }
                     }
                 }
             }
-            
         }
         .background(Color("BackgroundColor"))
         .toolbar(.hidden, for: .navigationBar)

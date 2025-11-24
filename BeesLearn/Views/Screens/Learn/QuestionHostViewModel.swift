@@ -17,29 +17,25 @@ final class QuestionHostViewModel: ObservableObject{
     @Published var nextQuestionID: UUID?
     @Published var dismissQuestionHostView = false
     @Published var result: QuestionResult?
-    @Published var questions: [Question] = [
-        MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
-        MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
-        MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: "Banana", answer: "Chuối", possiableAnswers: ["Chuoi1", "Chuoi2", "Chuoi3"]),
-        TrueFalseQuestion(content: "is this a test?", answer: "1")
-    ]
+    @Published var questions: [Question] = []
     
     private var questionProgress = 0
     private var currentQuestion: Question?
     
-    private var apiService = APIService.share
+    private var questionRepository = QuestionRepository.shared
     
     init() {
-        self.questions.shuffle()
-        print("question list: \(questions)")
-        self.currentQuestion = self.questions[questionProgress]
-        apiService.getQuestions(complete: { result in
-            switch result {
-            case .success(let questionData):
-                print(questionData)
-            case .failure(let error):
-                print(error)
-            }
+        self.questionRepository.getQuestions(complete: { result in
+            DispatchQueue.main.async(execute: {
+                switch result {
+                case .success(let questionData):
+                    self.questions = questionData
+                    self.questions.shuffle()
+                    self.currentQuestion = self.questions[self.questionProgress]
+                case .failure(let error):
+                    print(error)
+                }
+            })
         })
     }
     
@@ -59,8 +55,7 @@ final class QuestionHostViewModel: ObservableObject{
                 self.result = .incorrect
             }
         }
-        progress += 0.25
-        
+        progress += 1 / Double(self.questions.count)
         
         print(self.result)
 //        CompleteQuestion()
