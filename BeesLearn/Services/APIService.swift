@@ -19,12 +19,13 @@ final class APIService{
     
     private let baseURL = URL(string: "http://127.0.0.1:8080/")
     
-    func getQuestions(complete: @escaping (Result<QuestionsResponse, APIError>) -> Void){
+    func getQuestionsData(complete: @escaping (Result<QuestionsResponse, APIError>) -> Void){
         let endpoint = baseURL?.appending(path: "questions").appending(queryItems: [URLQueryItem(name: "total", value: "10")])
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: endpoint!)){ data,response,error in
             if let _ = error{
                 complete(.failure(.unableToComplete))
+                return
             }
             
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
