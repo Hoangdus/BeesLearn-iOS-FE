@@ -24,8 +24,8 @@ final class QuestionRepository{
                 questions.append(contentsOf: response.trueFalseQuestions)
                 
                 let shuffledWords = response.words.shuffled()
-                questions.append(MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: shuffledWords[0].englishWord, answer: shuffledWords[0].vietnameseMeaning, possiableAnswers: [shuffledWords[1].vietnameseMeaning, shuffledWords[2].vietnameseMeaning ,shuffledWords[3].vietnameseMeaning]))
-                questions.append(MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: shuffledWords[4].englishWord, answer: shuffledWords[4].vietnameseMeaning, possiableAnswers: [shuffledWords[5].vietnameseMeaning, shuffledWords[6].vietnameseMeaning ,shuffledWords[7].vietnameseMeaning]))
+                questions.append(MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: shuffledWords[0].englishWord, answer: shuffledWords[0].vietnameseMeaning, possiableAnswers: [shuffledWords[1].vietnameseMeaning, shuffledWords[2].vietnameseMeaning ,shuffledWords[3].vietnameseMeaning], vietnameseMeaning: ""))
+                questions.append(MultipleChoiceQuestion(question: "Chọn nghĩa đúng", content: shuffledWords[4].englishWord, answer: shuffledWords[4].vietnameseMeaning, possiableAnswers: [shuffledWords[5].vietnameseMeaning, shuffledWords[6].vietnameseMeaning ,shuffledWords[7].vietnameseMeaning], vietnameseMeaning: ""))
                 
                 for sentence in response.sentences{
                     if(Int.random(in: 1...2) == 1){

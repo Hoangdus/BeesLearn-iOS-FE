@@ -11,12 +11,12 @@ final class MultipleChoiceQuestion: Question{
     var question: String
     var possibleAnswers: [String]
     
-    init(question: String, content: String, answer: String, possiableAnswers: [String]) {
+    init(question: String, content: String, answer: String, possiableAnswers: [String], vietnameseMeaning: String) {
         self.question = question
         self.possibleAnswers = possiableAnswers
         self.possibleAnswers.append(answer)
         self.possibleAnswers.shuffle()
-        super.init(content: content, answer: answer)
+        super.init(content: content, answer: answer, vietnameseMeaning: vietnameseMeaning)
     }
     
     required init(from decoder: any Decoder) throws {
