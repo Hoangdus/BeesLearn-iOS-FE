@@ -20,7 +20,7 @@ struct ArrangeWords: View {
             VStack{
                 QuestionBoxView(
                     question: viewModel.questionForType0,
-                    content: viewModel.content,
+                    vietnameseMeaning: viewModel.content,
                     answer: viewModel.wordsInAnswer,
                     width: parentWidth,
                     height: parentHeight
@@ -119,7 +119,7 @@ fileprivate struct WrappingChipLayout: View {
 
 fileprivate struct QuestionBoxView: View {
     var question: String
-    var content: String
+    var vietnameseMeaning: String
     var answer: [Substring]
     var width: CGFloat
     var height: CGFloat
@@ -130,7 +130,7 @@ fileprivate struct QuestionBoxView: View {
             Text(question)
                 .font(Font.custom("Nunito-Bold", size: 21))
                 .foregroundStyle(Color("AccentColor"))
-            Text(content)
+            Text(vietnameseMeaning)
                 .multilineTextAlignment(.center)
                 .font(Font.custom("Nunito-Bold", size: 17))
                 .foregroundStyle(Color("AccentColor"))
