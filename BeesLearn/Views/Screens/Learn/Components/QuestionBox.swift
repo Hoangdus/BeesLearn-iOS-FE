@@ -11,6 +11,7 @@ import SwiftUI
 struct QuestionBox: View {
     var question: String
     var content: String
+    var vietnameseMeaning: String = ""
     
     var body: some View {
         ZStack(alignment: .center){
@@ -24,6 +25,11 @@ struct QuestionBox: View {
                 Text(content)
                     .font(Font.custom("Nunito-Bold", size: 20))
                     .foregroundStyle(Color("AccentColor"))
+                if (!vietnameseMeaning.isEmpty){
+                    Text(vietnameseMeaning)
+                        .font(Font.custom("Nunito-Bold", size: 20))
+                        .foregroundStyle(Color("AccentColor"))
+                }
                 Spacer()
             }
             .padding(.top, 40)

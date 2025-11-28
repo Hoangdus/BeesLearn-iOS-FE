@@ -12,7 +12,7 @@ struct TrueFalse: View {
     var onCompleteQuestion: (_ correctness: String)->Void
     var body: some View {
         VStack(){
-            QuestionBox(question: "Đúng hay Sai?", content: question.content)
+            QuestionBox(question: "Câu tiếng anh đúng hay sai?", content: question.content, vietnameseMeaning: question.vietnameseMeaning)
             Spacer()
             HStack(spacing: 90){
                 answerButtonView(type: false){ i in
