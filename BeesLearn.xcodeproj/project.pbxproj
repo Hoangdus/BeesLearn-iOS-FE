@@ -33,7 +33,6 @@
 		DC125CE42EA6D68400E85624 /* QuestionHostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC125CE32EA6D68400E85624 /* QuestionHostViewModel.swift */; };
 		DC19A2C82EC5BB6400B1648B /* ResultPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19A2C72EC5BB6400B1648B /* ResultPopUp.swift */; };
 		DC34A0DB2E9EE8FC00F3C608 /* CheckAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */; };
-		DC34A0DD2E9FBE2700F3C608 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */; };
 		DC4722DE2E84A363005E6FE5 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */; };
 		DC6821472ED7509D00ACF8B7 /* ArrangeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6821462ED7509D00ACF8B7 /* ArrangeQuestion.swift */; };
 		DC6B582D2ECFA34300B40045 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B582C2ECFA34300B40045 /* APIService.swift */; };
@@ -155,7 +154,6 @@
 		DC125CE32EA6D68400E85624 /* QuestionHostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHostViewModel.swift; sourceTree = "<group>"; };
 		DC19A2C72EC5BB6400B1648B /* ResultPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPopUp.swift; sourceTree = "<group>"; };
 		DC34A0DA2E9EE8B400F3C608 /* CheckAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnswerButton.swift; sourceTree = "<group>"; };
-		DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		DC4722DD2E84A363005E6FE5 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		DC6821462ED7509D00ACF8B7 /* ArrangeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeQuestion.swift; sourceTree = "<group>"; };
 		DC6B582C2ECFA34300B40045 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -432,7 +430,6 @@
 				DCCC846F2E93C516006D8269 /* TrueFalse.swift */,
 				DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */,
 				DCDB13612EA183D6006AB500 /* ArrangeWords.swift */,
-				DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */,
 				DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */,
 				DCBB58872EDB7944005B2AC2 /* FillInTheBlankViewModel.swift */,
 			);
@@ -732,7 +729,6 @@
 				3216DAB72CBE54C5000F0475 /* SettingView.swift in Sources */,
 				DC19A2C82EC5BB6400B1648B /* ResultPopUp.swift in Sources */,
 				3214976A2CB45E07008BF5C3 /* CustomButton.swift in Sources */,
-				DC34A0DD2E9FBE2700F3C608 /* QuestionViewModel.swift in Sources */,
 				DC9EB3402EA97064001E877B /* Question.swift in Sources */,
 				DC6B582F2ED117D900B40045 /* Word.swift in Sources */,
 				3216DAB32CBE5466000F0475 /* IPAView.swift in Sources */,
