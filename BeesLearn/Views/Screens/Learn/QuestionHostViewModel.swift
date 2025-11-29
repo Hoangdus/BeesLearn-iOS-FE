@@ -54,6 +54,13 @@ final class QuestionHostViewModel: ObservableObject{
             }else{
                 self.result = .incorrect
             }
+        }else if currentQuestion is ArrangeQuestion{
+            let arrangeQuestion = currentQuestion as! ArrangeQuestion
+            if (arrangeQuestion.checkAnswer(answer: answer as! String)){
+                self.result = .correct
+            }else{
+                self.result = .incorrect
+            }
         }
         progress += 1 / Double(self.questions.count)
         

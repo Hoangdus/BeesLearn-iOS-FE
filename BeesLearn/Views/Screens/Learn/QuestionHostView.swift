@@ -34,8 +34,14 @@ struct QuestionHostView: View {
                                         })
                                         .frame(width: geometry.size.width)
                                         .id(question.id)
-                                    }else{
+                                    }else if(question is MultipleChoiceQuestion){
                                         MultipleChoices(question: question as! MultipleChoiceQuestion, onCompleteQuestion: { answer in
+                                            hostViewModel.checkAnswer(answer: answer)
+                                        })
+                                        .frame(width: geometry.size.width)
+                                        .id(question.id)
+                                    }else if(question is ArrangeQuestion){
+                                        ArrangeWords(question: question as! ArrangeQuestion, onCompleteQuestion: { answer in
                                             hostViewModel.checkAnswer(answer: answer)
                                         })
                                         .frame(width: geometry.size.width)

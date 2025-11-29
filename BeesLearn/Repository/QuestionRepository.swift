@@ -29,7 +29,7 @@ final class QuestionRepository{
                 
                 for sentence in response.sentences{
                     if(Int.random(in: 1...2) == 1){
-                        
+                        questions.append(ArrangeQuestion(content: sentence.content, answer: sentence.content, vietnameseMeaning: sentence.meaning))
                     }else{
                         
                     }

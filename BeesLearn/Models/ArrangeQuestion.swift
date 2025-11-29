@@ -9,7 +9,7 @@ import Foundation
 
 final class ArrangeQuestion: Question{
     
-    func checkAnswer(){
-        
+    func checkAnswer(answer: String) -> Bool{
+        return self.answer == answer
     }
 }

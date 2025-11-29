@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ArrangeWords: View {
-    @StateObject var viewModel = QuestionViewModel()
-    @State var wordsInSentence: [Substring] = []
-    var onCompleteQuestion: ()->Void
+    @StateObject var viewModel: ArrangeWordsViewModel
+    var onCompleteQuestion: (_ answer: String)->Void
 
+    init(question: ArrangeQuestion, onCompleteQuestion: @escaping (_: String) -> Void) {
+        self._viewModel = StateObject(wrappedValue: ArrangeWordsViewModel(question: question))
+        self.onCompleteQuestion = onCompleteQuestion
+    }
+    
     var body: some View {
         GeometryReader{ geo in
             let parentWidth = geo.size.width * 0.9
@@ -19,8 +23,8 @@ struct ArrangeWords: View {
             
             VStack{
                 QuestionBoxView(
-                    question: viewModel.questionForType0,
-                    vietnameseMeaning: viewModel.content,
+                    question: viewModel.question,
+                    vietnameseMeaning: viewModel.vietnameseContext,
                     answer: viewModel.wordsInAnswer,
                     width: parentWidth,
                     height: parentHeight
@@ -38,15 +42,12 @@ struct ArrangeWords: View {
                     .frame(width: parentWidth)
                 Spacer()
                 CheckAnswerButton(width: parentWidth){
-                    print("Check")
-                    onCompleteQuestion()
+//                    print("Check")
+                    onCompleteQuestion(viewModel.getAnswer())
                 }
             }
             .padding(.bottom, 20)
             .frame(width: geo.size.width, height: geo.size.height)
-//            .onAppear(){
-//                viewModel.initCompleteSentence()
-//            }
         }
     }
 }

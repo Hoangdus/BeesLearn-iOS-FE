@@ -49,6 +49,7 @@
 		DCA79A462E8E338200A3AD55 /* QuestionHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A452E8E338200A3AD55 /* QuestionHostView.swift */; };
 		DCA79A482E8ECF1B00A3AD55 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */; };
 		DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */; };
+		DCBB58862EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */; };
 		DCC154612EBF646C00D58899 /* əʊ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154552EBF646C00D58899 /* əʊ.mp3 */; };
 		DCC154622EBF646C00D58899 /* e.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154512EBF646C00D58899 /* e.mp3 */; };
 		DCC154632EBF646C00D58899 /* ɪə.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154592EBF646C00D58899 /* ɪə.mp3 */; };
@@ -169,6 +170,7 @@
 		DCA79A452E8E338200A3AD55 /* QuestionHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHostView.swift; sourceTree = "<group>"; };
 		DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoices.swift; sourceTree = "<group>"; };
+		DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeWordsViewModel.swift; sourceTree = "<group>"; };
 		DCC1544C2EBF646C00D58899 /* æ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "æ.mp3"; sourceTree = "<group>"; };
 		DCC1544D2EBF646C00D58899 /* aɪ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aɪ.mp3"; sourceTree = "<group>"; };
 		DCC1544E2EBF646C00D58899 /* aʊ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aʊ.mp3"; sourceTree = "<group>"; };
@@ -317,12 +319,12 @@
 			isa = PBXGroup;
 			children = (
 				DC9EB33F2EA97064001E877B /* Question.swift */,
+				DC6821462ED7509D00ACF8B7 /* ArrangeQuestion.swift */,
 				DC9EB3412EA970C9001E877B /* TrueFalseQuestion.swift */,
 				DC9EB3452EAC1024001E877B /* MultipleChoiceQuestion.swift */,
 				DCC6C79F2EB7379F00C8D8AD /* IPA.swift */,
 				DC6B582E2ED117D900B40045 /* Word.swift */,
 				DC6B58322ED2EC0900B40045 /* Sentence.swift */,
-				DC6821462ED7509D00ACF8B7 /* ArrangeQuestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -429,6 +431,7 @@
 				DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */,
 				DCDB13612EA183D6006AB500 /* ArrangeWords.swift */,
 				DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */,
+				DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */,
 			);
 			path = QuestionViews;
 			sourceTree = "<group>";
@@ -744,6 +747,7 @@
 				DC6B58362ED31AB500B40045 /* QuestionRepository.swift in Sources */,
 				DCCC84722E93C641006D8269 /* QuestionBox.swift in Sources */,
 				3214974C2CB17906008BF5C3 /* WelcomeView.swift in Sources */,
+				DCBB58862EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift in Sources */,
 				DCA79A462E8E338200A3AD55 /* QuestionHostView.swift in Sources */,
 				3216DAB52CBE54AC000F0475 /* StatsView.swift in Sources */,
 				3255C5082CD2EB6F000DDCBE /* Calendar.swift in Sources */,
