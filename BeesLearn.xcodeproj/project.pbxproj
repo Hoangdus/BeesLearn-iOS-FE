@@ -50,6 +50,7 @@
 		DCA79A482E8ECF1B00A3AD55 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */; };
 		DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */; };
 		DCBB58862EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */; };
+		DCBB58882EDB7944005B2AC2 /* FillInTheBlankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB58872EDB7944005B2AC2 /* FillInTheBlankViewModel.swift */; };
 		DCC154612EBF646C00D58899 /* əʊ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154552EBF646C00D58899 /* əʊ.mp3 */; };
 		DCC154622EBF646C00D58899 /* e.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154512EBF646C00D58899 /* e.mp3 */; };
 		DCC154632EBF646C00D58899 /* ɪə.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154592EBF646C00D58899 /* ɪə.mp3 */; };
@@ -171,6 +172,7 @@
 		DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoices.swift; sourceTree = "<group>"; };
 		DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeWordsViewModel.swift; sourceTree = "<group>"; };
+		DCBB58872EDB7944005B2AC2 /* FillInTheBlankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInTheBlankViewModel.swift; sourceTree = "<group>"; };
 		DCC1544C2EBF646C00D58899 /* æ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "æ.mp3"; sourceTree = "<group>"; };
 		DCC1544D2EBF646C00D58899 /* aɪ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aɪ.mp3"; sourceTree = "<group>"; };
 		DCC1544E2EBF646C00D58899 /* aʊ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aʊ.mp3"; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 				DCDB13612EA183D6006AB500 /* ArrangeWords.swift */,
 				DC34A0DC2E9FBE2500F3C608 /* QuestionViewModel.swift */,
 				DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */,
+				DCBB58872EDB7944005B2AC2 /* FillInTheBlankViewModel.swift */,
 			);
 			path = QuestionViews;
 			sourceTree = "<group>";
@@ -717,6 +720,7 @@
 				DCDB13642EA199C5006AB500 /* AnswerChip.swift in Sources */,
 				DC6B58312ED1186D00B40045 /* QuestionsResponse.swift in Sources */,
 				DCA79A422E8B016600A3AD55 /* LevelListView.swift in Sources */,
+				DCBB58882EDB7944005B2AC2 /* FillInTheBlankViewModel.swift in Sources */,
 				DC125CE42EA6D68400E85624 /* QuestionHostViewModel.swift in Sources */,
 				DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */,
 				321497682CB458DE008BF5C3 /* CustomTextField.swift in Sources */,
