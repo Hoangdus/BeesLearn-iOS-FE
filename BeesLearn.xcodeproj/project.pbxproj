@@ -50,6 +50,7 @@
 		DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */; };
 		DCBB58862EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */; };
 		DCBB58882EDB7944005B2AC2 /* FillInTheBlankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB58872EDB7944005B2AC2 /* FillInTheBlankViewModel.swift */; };
+		DCBB588A2EDCF15C005B2AC2 /* FillInTheBlankQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB58892EDCF15C005B2AC2 /* FillInTheBlankQuestion.swift */; };
 		DCC154612EBF646C00D58899 /* əʊ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154552EBF646C00D58899 /* əʊ.mp3 */; };
 		DCC154622EBF646C00D58899 /* e.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154512EBF646C00D58899 /* e.mp3 */; };
 		DCC154632EBF646C00D58899 /* ɪə.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC154592EBF646C00D58899 /* ɪə.mp3 */; };
@@ -171,6 +172,7 @@
 		DCA79A4A2E8F069000A3AD55 /* MultipleChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoices.swift; sourceTree = "<group>"; };
 		DCBB58852EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeWordsViewModel.swift; sourceTree = "<group>"; };
 		DCBB58872EDB7944005B2AC2 /* FillInTheBlankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInTheBlankViewModel.swift; sourceTree = "<group>"; };
+		DCBB58892EDCF15C005B2AC2 /* FillInTheBlankQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInTheBlankQuestion.swift; sourceTree = "<group>"; };
 		DCC1544C2EBF646C00D58899 /* æ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "æ.mp3"; sourceTree = "<group>"; };
 		DCC1544D2EBF646C00D58899 /* aɪ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aɪ.mp3"; sourceTree = "<group>"; };
 		DCC1544E2EBF646C00D58899 /* aʊ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aʊ.mp3"; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				DC6821462ED7509D00ACF8B7 /* ArrangeQuestion.swift */,
 				DC9EB3412EA970C9001E877B /* TrueFalseQuestion.swift */,
 				DC9EB3452EAC1024001E877B /* MultipleChoiceQuestion.swift */,
+				DCBB58892EDCF15C005B2AC2 /* FillInTheBlankQuestion.swift */,
 				DCC6C79F2EB7379F00C8D8AD /* IPA.swift */,
 				DC6B582E2ED117D900B40045 /* Word.swift */,
 				DC6B58322ED2EC0900B40045 /* Sentence.swift */,
@@ -720,6 +723,7 @@
 				DCBB58882EDB7944005B2AC2 /* FillInTheBlankViewModel.swift in Sources */,
 				DC125CE42EA6D68400E85624 /* QuestionHostViewModel.swift in Sources */,
 				DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */,
+				DCBB588A2EDCF15C005B2AC2 /* FillInTheBlankQuestion.swift in Sources */,
 				321497682CB458DE008BF5C3 /* CustomTextField.swift in Sources */,
 				DCC6C7A22EB73BB700C8D8AD /* IPAListViewModel.swift in Sources */,
 				321497662CB44F64008BF5C3 /* LoginView.swift in Sources */,
