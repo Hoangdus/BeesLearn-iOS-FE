@@ -8,11 +8,36 @@
 import Foundation
 
 final class FillInTheBlankViewModel: ObservableObject{
-    @Published var sentence = "Lorem Ipsum is simply dummy text of the printing and typesetting. text"
+    @Published var question = "Điền vào chỗ trống"
     @Published var wordsInSentence: [Substring] = []
+    @Published var vietnameseContext = ""
+    @Published var answers: [String]
+    @Published var selectedAnswer: String?
+    @Published var selectedAnswerIndex: Int?
     
-    init(){
-        self.wordsInSentence = sentence.split(separator: " ")
-        self.wordsInSentence[Int.random(in: 0...self.wordsInSentence.count-1)] = "_________"
+    private var blankedWordIndex: Int?
+    
+    init(question: FillInTheBlankQuestion){
+        self.wordsInSentence = question.words
+        self.vietnameseContext = question.vietnameseMeaning
+        self.answers = question.possibleAnswers
+        self.blankedWordIndex = self.wordsInSentence.firstIndex(of: "__________")
+    }
+    
+    func selectAnswer(answer: String, index: Int){
+        if(self.selectedAnswerIndex == index){
+            self.selectedAnswerIndex = nil
+            self.selectedAnswer = nil
+            if(blankedWordIndex != nil){
+                self.wordsInSentence[blankedWordIndex!] = "__________"
+            }
+            return
+        }
+        
+        self.selectedAnswerIndex = index
+        self.selectedAnswer = answer
+        if(blankedWordIndex != nil){
+            self.wordsInSentence[blankedWordIndex!] = Substring(stringLiteral: answer)
+        }
     }
 }

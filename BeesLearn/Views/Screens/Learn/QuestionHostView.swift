@@ -46,6 +46,12 @@ struct QuestionHostView: View {
                                         })
                                         .frame(width: geometry.size.width)
                                         .id(question.id)
+                                    }else if(question is FillInTheBlankQuestion){
+                                        FillInTheBlank(question: question as! FillInTheBlankQuestion, onCompleteQuestion: { answer in
+                                            hostViewModel.checkAnswer(answer: answer)
+                                        })
+                                        .frame(width: geometry.size.width)
+                                        .id(question.id)
                                     }
                                 }
                             }

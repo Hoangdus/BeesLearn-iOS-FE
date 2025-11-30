@@ -8,174 +8,86 @@
 import SwiftUI
 
 struct FillInTheBlank: View {
-    @StateObject var viewModel = QuestionViewModel()
-    @State var wordsInSentence: [Substring] = []
-
+    @StateObject var viewModel: FillInTheBlankViewModel
+    var onCompleteQuestion: (_ answer: String)->Void
+    
+    init(question: FillInTheBlankQuestion, onCompleteQuestion: @escaping (_: String) -> Void){
+        self._viewModel = StateObject(wrappedValue: FillInTheBlankViewModel(question: question))
+        self.onCompleteQuestion = onCompleteQuestion
+    }
+    
     var body: some View {
         GeometryReader{ geo in
-            let parentWidth = geo.size.width * 0.9
-            let parentHeight = geo.size.height * 0.5
+            let buttonBrightness = 0.15
+            let parentWidth = geo.size.width
+//            let parentHeight = geo.size.height
             
             VStack{
-                QuestionBoxView(
-                    question: viewModel.questionForType0,
-                    content: viewModel.content,
-                    answer: viewModel.wordsInAnswer,
-                    width: parentWidth,
-                    height: parentHeight
-                ){ value in
-//                    viewModel.removeWordInAnswer(index: value)
-                }
-                WrappingChipLayout(
-                    items: viewModel.wordsInSentence,
-                    hiddenItems: viewModel.hiddenSentenceWords,
-                    spacing: 6
-                ){ word, index in
-//                    viewModel.putContentWordInAnswer(word: word, index: index)
-                }
-                    .padding()
-                    .frame(width: parentWidth)
+                QuestionBox(
+                    question: viewModel.question,
+                    content: viewModel.wordsInSentence.joined(separator: " "),
+                    vietnameseMeaning: viewModel.vietnameseContext
+                )
                 Spacer()
-                CheckAnswerButton(width: parentWidth){
-                    print("Check")
+                AnswerButton(answer: viewModel.answers[0], width: parentWidth * 0.8, action: { answer in
+                    viewModel.selectAnswer(answer: answer, index: 1)
+                })
+                .brightness(viewModel.selectedAnswerIndex == 1 ? buttonBrightness : 0)
+                AnswerButton(answer: viewModel.answers[1], width: parentWidth * 0.8, action: { answer in
+                    viewModel.selectAnswer(answer: answer, index: 2)
+                })
+                .brightness(viewModel.selectedAnswerIndex == 2 ? buttonBrightness : 0)
+                AnswerButton(answer: viewModel.answers[2], width: parentWidth * 0.8, action: { answer in
+                    viewModel.selectAnswer(answer: answer, index: 3)
+                })
+                .brightness(viewModel.selectedAnswerIndex == 3 ? buttonBrightness : 0)
+                Spacer()
+                CheckAnswerButton(width: parentWidth * 0.9){
+                    if(viewModel.selectedAnswer != nil){
+                        print(viewModel.selectedAnswer!)
+                    }
                 }
+                .disabled(viewModel.selectedAnswer != nil ? false : true)
+                .brightness(viewModel.selectedAnswer != nil ? 0 : -0.5)
             }
             .padding(.bottom, 20)
             .frame(width: geo.size.width, height: geo.size.height)
-            .onAppear(){
-                viewModel.initFillInTheBlank()
-            }
         }
     }
 }
 
-fileprivate struct WrappingChipLayout: View {
-    var items: [Substring]
-    var hiddenItems: [Int] = []
-    var spacing: CGFloat
-    var action: (_: Substring, _: Int) -> Void
-    
-    @State private var showView = false
-    @State private var totalHeight: CGFloat = .zero
-    
-    var body: some View {
-        VStack{
-            GeometryReader { geometry in
-                self.generateContent(in: geometry)
-            }
-        }
-        .frame(height: totalHeight)
-    }
-    
-    private func generateContent(in geometry: GeometryProxy) -> some View {
-        var width = CGFloat.zero
-        var height = CGFloat.zero
-        @State var xOffset = CGFloat.zero
-        @State var yOffset = CGFloat.zero
-        
-        let contentView =
-            ZStack(alignment: .topLeading) {
-                ForEach(Array(items.enumerated()), id: \.offset) { index, item in
-                    AnswerChipView(answer: item.description, action: {
-                        action(item, index)
-                    })
-                        .padding(.trailing, spacing)
-                        .padding(.bottom, spacing)
-                        .alignmentGuide(.leading, computeValue: { dimension in
-                            if (abs(width - dimension.width) > geometry.size.width) {
-                                width = 0
-                                height -= dimension.height
-                            }
-                            let result = width
-                            if index == items.count - 1 {
-                                width = 0
-                            } else {
-                                width -= dimension.width
-                            }
-                            if item == "_________" {
-                                xOffset = width
-//                              print("xOffset: \(xOffset)")
-                            }
-                            return result
-                        })
-                        .alignmentGuide(.top, computeValue: { dimension in
-                            let result = height
-                            if index == items.count - 1 {
-                                height = 0
-                            }
-                            if item == "_________" {
-                                yOffset = height
-//                              print("yOffset: \(yOffset)")
-                            }
-                            return result
-                        })
-                        .opacity(hiddenItems.contains(index) ? 0 : 1)
-                }
-                    if showView {
-                        AnswerChipView(answer: "test", action: {
-                            
-                        })
-                        .offset(x: xOffset, y: yOffset)
-                        .onAppear(){
-                            print("xOffset: \(xOffset)")
-                            print("yOffset: \(yOffset)")
-                        }
-                    }
-                }
-                .background(viewHeightReader($totalHeight))
-                .onAppear(){
-                    Task{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
-                            self.showView = true
-                        })
-                    }
-                }
-        return contentView
-    }
-    
-    private func viewHeightReader(_ binding: Binding<CGFloat>) -> some View {
-        return GeometryReader { geometry -> Color in
-            let rect = geometry.frame(in: .local)
-            DispatchQueue.main.async {
-                binding.wrappedValue = rect.size.height
-            }
-            return .clear
-        }
-    }
-}
-
-fileprivate struct QuestionBoxView: View {
-    var question: String
-    var content: String
-    var answer: [Substring]
+fileprivate struct AnswerButton: View {
+    var answer: String
     var width: CGFloat
-    var height: CGFloat
-    var action: (_: Int) -> Void
+    var action: (_ answer: String) -> Void
     
     var body: some View {
-        VStack(spacing: 10){
-            Text(question)
-                .font(Font.custom("Nunito-Bold", size: 21))
-                .foregroundStyle(Color("AccentColor"))
-            Text(content)
-                .multilineTextAlignment(.center)
-                .font(Font.custom("Nunito-Bold", size: 17))
-                .foregroundStyle(Color("AccentColor"))
-            WrappingChipLayout(items: answer, spacing: 5){ _, index in
-                action(index)
+        Button(action: {
+            action(answer)
+        }, label: {
+            ZStack{
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color("AppPrimaryColor"))
+                    .shadow(color: Color("ShadowColor"), radius: 3, y: 3)
+                Text(answer)
+                    .multilineTextAlignment(.center)
+                    .font(Font.custom("Nunito-Bold", size: 21))
+                    .foregroundStyle(Color("AccentColor"))
             }
-            Spacer()
-        }
-        .padding(14)
-        .frame(width: width, height: height)
-        .background(){
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color("AppPrimaryColor"))
-                .shadow(color: Color("ShadowColor"), radius: 3, y: 3)
-        }
+            
+        })
+        .frame(width: width, height: 40)
     }
 }
 
 #Preview {
-    FillInTheBlank()
+    FillInTheBlank(
+        question: FillInTheBlankQuestion(
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting.",
+            vietnameseMeaning: "Lorem Ipsum chỉ đơn giản là văn bản giả dùng cho việc in ấn và sắp chữ.",
+            possibleAnswers: ["test1", "test2"]),
+        onCompleteQuestion: { _ in
+            
+        }
+    )
 }

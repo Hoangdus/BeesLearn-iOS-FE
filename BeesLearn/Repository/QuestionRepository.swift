@@ -31,7 +31,7 @@ final class QuestionRepository{
                     if(Int.random(in: 1...2) == 1){
                         questions.append(ArrangeQuestion(content: sentence.content, answer: sentence.content, vietnameseMeaning: sentence.meaning))
                     }else{
-                        
+                        questions.append(FillInTheBlankQuestion(content: sentence.content, vietnameseMeaning: sentence.meaning, possibleAnswers: [shuffledWords[Int.random(in: 0...3)].englishWord, shuffledWords[Int.random(in: 4...7)].englishWord]))
                     }
                 }
                 

@@ -32,6 +32,7 @@ final class QuestionHostViewModel: ObservableObject{
                     self.questions = questionData
                     self.questions.shuffle()
                     self.currentQuestion = self.questions[self.questionProgress]
+                    print(self.questions)
                 case .failure(let error):
                     print(error)
                 }
@@ -57,6 +58,13 @@ final class QuestionHostViewModel: ObservableObject{
         }else if currentQuestion is ArrangeQuestion{
             let arrangeQuestion = currentQuestion as! ArrangeQuestion
             if (arrangeQuestion.checkAnswer(answer: answer as! String)){
+                self.result = .correct
+            }else{
+                self.result = .incorrect
+            }
+        }else if currentQuestion is FillInTheBlankQuestion{
+            let fillInTheBlankQuestion = currentQuestion as! FillInTheBlankQuestion
+            if (fillInTheBlankQuestion.checkAnswer(answer: answer as! String)){
                 self.result = .correct
             }else{
                 self.result = .incorrect
