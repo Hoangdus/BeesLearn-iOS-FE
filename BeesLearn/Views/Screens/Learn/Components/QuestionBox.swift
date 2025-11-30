@@ -12,6 +12,8 @@ struct QuestionBox: View {
     var question: String
     var content: String
     var vietnameseMeaning: String = ""
+    var width: CGFloat = 300
+    var height: CGFloat = 200
     
     var body: some View {
         ZStack(alignment: .center){
@@ -34,6 +36,6 @@ struct QuestionBox: View {
             }
             .padding(.top, 40)
         }
-        .frame(width: 300, height: 200)
+        .frame(width: width, height: height)
     }
 }
