@@ -26,7 +26,8 @@ struct FillInTheBlank: View {
                 QuestionBox(
                     question: viewModel.question,
                     content: viewModel.wordsInSentence.joined(separator: " "),
-                    vietnameseMeaning: viewModel.vietnameseContext
+                    vietnameseMeaning: viewModel.vietnameseContext,
+                    height: 260
                 )
                 Spacer()
                 AnswerButton(answer: viewModel.answers[0], width: parentWidth * 0.8, action: { answer in
