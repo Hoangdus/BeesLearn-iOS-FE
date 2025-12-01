@@ -27,14 +27,17 @@ struct QuestionBox: View {
                 Text(content)
                     .font(Font.custom("Nunito-Bold", size: 20))
                     .foregroundStyle(Color("AccentColor"))
+                    .multilineTextAlignment(.center)
                 if (!vietnameseMeaning.isEmpty){
                     Text(vietnameseMeaning)
                         .font(Font.custom("Nunito-Bold", size: 20))
                         .foregroundStyle(Color("AccentColor"))
+                        .multilineTextAlignment(.center)
                 }
                 Spacer()
             }
             .padding(.top, 40)
+            .padding([.leading, .trailing], 10)
         }
         .frame(width: width, height: height)
     }
