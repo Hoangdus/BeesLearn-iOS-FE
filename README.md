@@ -1,0 +1,3 @@
+Multiple Choices             |  TrueFalse        |  Fill in the blank  |  Arrange words
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/Hoangdus/BeesLearn-iOS-FE/blob/main/ScreenShots/multiplechoices.gif" alt="drawing" width="200"/>  |  <img src="https://github.com/Hoangdus/BeesLearn-iOS-FE/blob/main/ScreenShots/truefalse.gif" alt="drawing" width="200"/> | <img src="https://github.com/Hoangdus/BeesLearn-iOS-FE/blob/main/ScreenShots/fillintheblank.gif" alt="drawing" width="200"/> | <img src="https://github.com/Hoangdus/BeesLearn-iOS-FE/blob/main/ScreenShots/arrangewords.gif" alt="drawing" width="200"/> 
