@@ -45,7 +45,7 @@ struct FillInTheBlank: View {
                 Spacer()
                 CheckAnswerButton(width: parentWidth * 0.9){
                     if(viewModel.selectedAnswer != nil){
-                        print(viewModel.selectedAnswer!)
+                        onCompleteQuestion(viewModel.selectedAnswer!)
                     }
                 }
                 .disabled(viewModel.selectedAnswer != nil ? false : true)
