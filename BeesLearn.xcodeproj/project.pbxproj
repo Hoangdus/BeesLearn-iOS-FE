@@ -112,6 +112,7 @@
 		DCF532A82EE265F900A93DD3 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A72EE265F900A93DD3 /* TitleText.swift */; };
 		DCF532AA2EE3A5A800A93DD3 /* FlashCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A92EE3A5A800A93DD3 /* FlashCardStackView.swift */; };
 		DCF532AC2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532AB2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift */; };
+		DCF532AF2EE3A67B00A93DD3 /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532AE2EE3A67B00A93DD3 /* FlashCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +242,7 @@
 		DCF532A72EE265F900A93DD3 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		DCF532A92EE3A5A800A93DD3 /* FlashCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardStackView.swift; sourceTree = "<group>"; };
 		DCF532AB2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardStackViewModel.swift; sourceTree = "<group>"; };
+		DCF532AE2EE3A67B00A93DD3 /* FlashCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -563,6 +565,7 @@
 			children = (
 				DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */,
 				DCF532A12EE218DB00A93DD3 /* TopicItem.swift */,
+				DCF532AE2EE3A67B00A93DD3 /* FlashCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				DCF532A22EE218DB00A93DD3 /* TopicItem.swift in Sources */,
 				DCBB588A2EDCF15C005B2AC2 /* FillInTheBlankQuestion.swift in Sources */,
 				321497682CB458DE008BF5C3 /* CustomTextField.swift in Sources */,
+				DCF532AF2EE3A67B00A93DD3 /* FlashCard.swift in Sources */,
 				DCC6C7A22EB73BB700C8D8AD /* IPAListViewModel.swift in Sources */,
 				321497662CB44F64008BF5C3 /* LoginView.swift in Sources */,
 				DCC6C7A02EB7379F00C8D8AD /* IPA.swift in Sources */,
