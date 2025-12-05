@@ -17,6 +17,7 @@ struct DifficultySelection: View {
             })
             Spacer()
             VStack(spacing: 30){
+                TitleText(text: "Chọn độ khó")
                 DifficultyButton()
                     .frame(height: 100)
                 DifficultyButton()

@@ -16,6 +16,8 @@ struct TopicList: View {
     
     var body: some View {
         ScrollView{
+            TitleText(text: "Chọn 1 chủ đề")
+                .padding()
             NavigationLink(
                 destination: DifficultySelection()
             ){
