@@ -1,5 +1,5 @@
 //
-//  FlashCard.swift
+//  FlashCardHostView.swift
 //  BeesLearn
 //
 //  Created by HoangDus on 3/11/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FlashCard: View {
+struct FlashCardHostView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -23,5 +23,5 @@ struct FlashCard: View {
 }
 
 #Preview {
-    FlashCard()
+    FlashCardHostView()
 }

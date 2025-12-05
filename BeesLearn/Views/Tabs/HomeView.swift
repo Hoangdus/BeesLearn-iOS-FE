@@ -53,7 +53,7 @@ struct HomeView: View {
                                 OptionButtonView(title: "IPA", imageName: "podcast")
                             }
                             NavigationLink(
-                                destination: FlashCard()
+                                destination: FlashCardHostView()
                             ){
                                 OptionButtonView(title: "Flash card", imageName: "music")
                             }
