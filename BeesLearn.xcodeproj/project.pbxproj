@@ -536,10 +536,9 @@
 		DCC6C7A32EB8CA8700C8D8AD /* FlashCard */ = {
 			isa = PBXGroup;
 			children = (
+				DCF532AD2EE3A63B00A93DD3 /* Components */,
 				DCC6C7A42EB8CABA00C8D8AD /* FlashCardHostView.swift */,
 				DCF5329F2EE214F900A93DD3 /* TopicList.swift */,
-				DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */,
-				DCF532A12EE218DB00A93DD3 /* TopicItem.swift */,
 				DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */,
 				DCF532A92EE3A5A800A93DD3 /* FlashCardStackView.swift */,
 				DCF532AB2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift */,
@@ -555,6 +554,15 @@
 				DCDB13632EA199C5006AB500 /* AnswerChip.swift */,
 				DCCC84712E93C641006D8269 /* QuestionBox.swift */,
 				DC19A2C72EC5BB6400B1648B /* ResultPopUp.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DCF532AD2EE3A63B00A93DD3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */,
+				DCF532A12EE218DB00A93DD3 /* TopicItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
