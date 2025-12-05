@@ -110,6 +110,8 @@
 		DCF532A42EE252E500A93DD3 /* DifficultySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */; };
 		DCF532A62EE25AAC00A93DD3 /* DifficultyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */; };
 		DCF532A82EE265F900A93DD3 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A72EE265F900A93DD3 /* TitleText.swift */; };
+		DCF532AA2EE3A5A800A93DD3 /* FlashCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A92EE3A5A800A93DD3 /* FlashCardStackView.swift */; };
+		DCF532AC2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532AB2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +239,8 @@
 		DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySelection.swift; sourceTree = "<group>"; };
 		DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyButton.swift; sourceTree = "<group>"; };
 		DCF532A72EE265F900A93DD3 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
+		DCF532A92EE3A5A800A93DD3 /* FlashCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardStackView.swift; sourceTree = "<group>"; };
+		DCF532AB2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardStackViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -537,6 +541,8 @@
 				DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */,
 				DCF532A12EE218DB00A93DD3 /* TopicItem.swift */,
 				DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */,
+				DCF532A92EE3A5A800A93DD3 /* FlashCardStackView.swift */,
+				DCF532AB2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift */,
 			);
 			path = FlashCard;
 			sourceTree = "<group>";
@@ -754,6 +760,7 @@
 				DC6B582F2ED117D900B40045 /* Word.swift in Sources */,
 				3216DAB32CBE5466000F0475 /* IPAView.swift in Sources */,
 				3216DAB12CBE5455000F0475 /* HomeView.swift in Sources */,
+				DCF532AA2EE3A5A800A93DD3 /* FlashCardStackView.swift in Sources */,
 				3255C4FC2CC3C5AD000DDCBE /* LoginViewModel.swift in Sources */,
 				DCC6C7A52EB8CABA00C8D8AD /* FlashCardHostView.swift in Sources */,
 				DC34A0DB2E9EE8FC00F3C608 /* CheckAnswerButton.swift in Sources */,
@@ -781,6 +788,7 @@
 				DC9EB3462EAC1024001E877B /* MultipleChoiceQuestion.swift in Sources */,
 				DC6B58332ED2EC0900B40045 /* Sentence.swift in Sources */,
 				321497192CB1688B008BF5C3 /* BeesLearnApp.swift in Sources */,
+				DCF532AC2EE3A5BC00A93DD3 /* FlashCardStackViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

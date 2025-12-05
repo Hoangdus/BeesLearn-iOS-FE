@@ -18,12 +18,18 @@ struct DifficultySelection: View {
             Spacer()
             VStack(spacing: 30){
                 TitleText(text: "Chọn độ khó")
-                DifficultyButton()
-                    .frame(height: 100)
-                DifficultyButton()
-                    .frame(height: 100)
-                DifficultyButton()
-                    .frame(height: 100)
+                NavigationLink(destination: FlashCardStackView(), label: {
+                        DifficultyButton()
+                            .frame(height: 100)
+                })
+                NavigationLink(destination: FlashCardStackView(), label: {
+                        DifficultyButton()
+                            .frame(height: 100)
+                })
+                NavigationLink(destination: FlashCardStackView(), label: {
+                        DifficultyButton()
+                            .frame(height: 100)
+                })
             }
             .padding(60)
             Spacer()
