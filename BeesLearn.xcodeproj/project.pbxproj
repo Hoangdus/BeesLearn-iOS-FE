@@ -105,6 +105,10 @@
 		DCCC84752E93CC47006D8269 /* FillInTheBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */; };
 		DCDB13622EA183E7006AB500 /* ArrangeWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB13612EA183D6006AB500 /* ArrangeWords.swift */; };
 		DCDB13642EA199C5006AB500 /* AnswerChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB13632EA199C5006AB500 /* AnswerChip.swift */; };
+		DCF532A02EE214F900A93DD3 /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5329F2EE214F900A93DD3 /* TopicList.swift */; };
+		DCF532A22EE218DB00A93DD3 /* TopicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A12EE218DB00A93DD3 /* TopicItem.swift */; };
+		DCF532A42EE252E500A93DD3 /* DifficultySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */; };
+		DCF532A62EE25AAC00A93DD3 /* DifficultyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +231,10 @@
 		DCCC84742E93CC47006D8269 /* FillInTheBlank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInTheBlank.swift; sourceTree = "<group>"; };
 		DCDB13612EA183D6006AB500 /* ArrangeWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeWords.swift; sourceTree = "<group>"; };
 		DCDB13632EA199C5006AB500 /* AnswerChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChip.swift; sourceTree = "<group>"; };
+		DCF5329F2EE214F900A93DD3 /* TopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicList.swift; sourceTree = "<group>"; };
+		DCF532A12EE218DB00A93DD3 /* TopicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicItem.swift; sourceTree = "<group>"; };
+		DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySelection.swift; sourceTree = "<group>"; };
+		DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +530,10 @@
 			isa = PBXGroup;
 			children = (
 				DCC6C7A42EB8CABA00C8D8AD /* FlashCard.swift */,
+				DCF5329F2EE214F900A93DD3 /* TopicList.swift */,
+				DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */,
+				DCF532A12EE218DB00A93DD3 /* TopicItem.swift */,
+				DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */,
 			);
 			path = FlashCard;
 			sourceTree = "<group>";
@@ -716,6 +728,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3255C5002CD248AA000DDCBE /* CustomTopBar.swift in Sources */,
+				DCF532A42EE252E500A93DD3 /* DifficultySelection.swift in Sources */,
 				DCCC84702E93C516006D8269 /* TrueFalse.swift in Sources */,
 				DCDB13642EA199C5006AB500 /* AnswerChip.swift in Sources */,
 				DC6B58312ED1186D00B40045 /* QuestionsResponse.swift in Sources */,
@@ -723,6 +736,7 @@
 				DCBB58882EDB7944005B2AC2 /* FillInTheBlankViewModel.swift in Sources */,
 				DC125CE42EA6D68400E85624 /* QuestionHostViewModel.swift in Sources */,
 				DCA79A4B2E8F069000A3AD55 /* MultipleChoices.swift in Sources */,
+				DCF532A22EE218DB00A93DD3 /* TopicItem.swift in Sources */,
 				DCBB588A2EDCF15C005B2AC2 /* FillInTheBlankQuestion.swift in Sources */,
 				321497682CB458DE008BF5C3 /* CustomTextField.swift in Sources */,
 				DCC6C7A22EB73BB700C8D8AD /* IPAListViewModel.swift in Sources */,
@@ -749,11 +763,13 @@
 				326F10892CD996E000E3EF08 /* Translation.swift in Sources */,
 				DCDB13622EA183E7006AB500 /* ArrangeWords.swift in Sources */,
 				DC6B58362ED31AB500B40045 /* QuestionRepository.swift in Sources */,
+				DCF532A02EE214F900A93DD3 /* TopicList.swift in Sources */,
 				DCCC84722E93C641006D8269 /* QuestionBox.swift in Sources */,
 				3214974C2CB17906008BF5C3 /* WelcomeView.swift in Sources */,
 				DCBB58862EDB5E8B005B2AC2 /* ArrangeWordsViewModel.swift in Sources */,
 				DCA79A462E8E338200A3AD55 /* QuestionHostView.swift in Sources */,
 				3216DAB52CBE54AC000F0475 /* StatsView.swift in Sources */,
+				DCF532A62EE25AAC00A93DD3 /* DifficultyButton.swift in Sources */,
 				3255C5082CD2EB6F000DDCBE /* Calendar.swift in Sources */,
 				DCC6C79E2EB5BB7500C8D8AD /* IPAList.swift in Sources */,
 				3214976C2CB68F5F008BF5C3 /* SignUpView.swift in Sources */,
