@@ -109,6 +109,7 @@
 		DCF532A22EE218DB00A93DD3 /* TopicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A12EE218DB00A93DD3 /* TopicItem.swift */; };
 		DCF532A42EE252E500A93DD3 /* DifficultySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */; };
 		DCF532A62EE25AAC00A93DD3 /* DifficultyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */; };
+		DCF532A82EE265F900A93DD3 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF532A72EE265F900A93DD3 /* TitleText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +236,7 @@
 		DCF532A12EE218DB00A93DD3 /* TopicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicItem.swift; sourceTree = "<group>"; };
 		DCF532A32EE252E500A93DD3 /* DifficultySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySelection.swift; sourceTree = "<group>"; };
 		DCF532A52EE25AAC00A93DD3 /* DifficultyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyButton.swift; sourceTree = "<group>"; };
+		DCF532A72EE265F900A93DD3 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +383,7 @@
 				326F10882CD996E000E3EF08 /* Translation.swift */,
 				DCA79A432E8DF93800A3AD55 /* LevelListItem.swift */,
 				DCA79A472E8ECF1B00A3AD55 /* CustomNavigationBar.swift */,
+				DCF532A72EE265F900A93DD3 /* TitleText.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -757,6 +760,7 @@
 				DC6B582D2ECFA34300B40045 /* APIService.swift in Sources */,
 				DCCC84752E93CC47006D8269 /* FillInTheBlank.swift in Sources */,
 				321497622CB3ED19008BF5C3 /* CustomButtonLogin.swift in Sources */,
+				DCF532A82EE265F900A93DD3 /* TitleText.swift in Sources */,
 				DC125CE22EA6D36400E85624 /* ProgressNavigationBar.swift in Sources */,
 				DC9EB3422EA970C9001E877B /* TrueFalseQuestion.swift in Sources */,
 				DCA79A442E8DF93800A3AD55 /* LevelListItem.swift in Sources */,

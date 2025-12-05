@@ -30,7 +30,7 @@ struct IPAList: View {
                             }
                         }
                     } header: {
-                        HeaderView(text: "Nguyên Âm")
+                        TitleText(text: "Nguyên Âm")
                     }
                     Section{
                         ForEach(iPAViewModel.consonants) { ipa in
@@ -39,7 +39,7 @@ struct IPAList: View {
                             }
                         }
                     } header: {
-                        HeaderView(text: "Phụ Âm")
+                        TitleText(text: "Phụ Âm")
                     }
                 }
                 .padding()
@@ -47,19 +47,6 @@ struct IPAList: View {
         }        
         .background(Color("BackgroundColor"))
         .toolbar(.hidden, for: .navigationBar)
-    }
-}
-
-struct HeaderView: View {
-    let text: String
-    var body: some View {
-        VStack{
-            Spacer()
-            Text(text)
-                .font(Font.custom("Nunito-Bold", size: 32))
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .frame(height: 30)
     }
 }
 
