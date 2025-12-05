@@ -24,7 +24,7 @@ struct LevelListView: View {
     
     var body: some View {
         VStack{
-            CustomNavigationBar(){
+            CustomNavigationBar(title: "Learn"){
                 dismiss()
             }
             ScrollView{

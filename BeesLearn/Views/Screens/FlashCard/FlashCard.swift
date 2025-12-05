@@ -12,7 +12,7 @@ struct FlashCard: View {
     
     var body: some View {
         VStack{
-            CustomNavigationBar(goBack: {
+            CustomNavigationBar(title: "Flashcards", goBack: {
                 dismiss()
             })
             TopicList()

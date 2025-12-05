@@ -12,7 +12,7 @@ struct DifficultySelection: View {
     
     var body: some View {
         VStack{
-            CustomNavigationBar(goBack: {
+            CustomNavigationBar(title: "", goBack: {
                 dismiss()
             })
             Spacer()

@@ -18,7 +18,7 @@ struct IPAList: View {
         
     var body: some View {
         VStack{
-            CustomNavigationBar(){
+            CustomNavigationBar(title: "IPA"){
                 dismiss()
             }
             ScrollView {
