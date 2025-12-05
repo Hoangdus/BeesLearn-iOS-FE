@@ -17,11 +17,6 @@ struct DifficultyButton: View {
                 .multilineTextAlignment(.center)
                 .font(Font.custom("Nunito-Bold", size: 21))
                 .foregroundStyle(Color("AccentColor"))
-                .background(content: {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color("AppPrimaryColor"))
-                        .shadow(color: Color("ShadowColor"), radius: 3, y: 3)
-                })
         }
     }
 }
